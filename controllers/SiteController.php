@@ -63,6 +63,17 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+        /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionTeste()
+    {
+        echo'teste'; 
+        die;
+    }
 
     /**
      * Login action.
