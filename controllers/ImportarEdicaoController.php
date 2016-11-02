@@ -8,8 +8,7 @@ use yii\web\Controller;
 use app\models\journal;
 use app\models\journal_pages;
 use app\models\log;
-use app\lib\PDF2Text\pdf2text;
-
+use app\lib\PDF2Text\PDF2Text;
 
 class ImportarEdicaoController extends Controller
 {
@@ -84,12 +83,23 @@ class ImportarEdicaoController extends Controller
      */
     private function lerPdf($path)
     {
+        
         try {
-            $pdf = new PDF2Text();
-            $pdf->setFilename($path);
-            $pdf->decodePDF();
-            $text = $pdf->output(true);
-            
+            $a = new PDF2Text();
+            $a->setFilename($path);
+            $a->decodePDF();
+            $text = $a->output();
+            /*
+            $parser = new \Smalot\PdfParser\Parser();
+            $pdf    = $parser->parseFile($path);
+            //$ttt    = $pdf->getText();
+          
+            $pages  = $pdf->getPages();
+            foreach ($pages as $page) {
+                $text[] = $page->getText();
+            }
+             * 
+             */
             exit();
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
