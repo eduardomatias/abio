@@ -30,4 +30,12 @@ class ApiController extends ActiveController
           ],
       ]);
   }
+  
+  
+  
+  public function teste()
+  {
+      echo'teste';
+      die;
+  }
 }
