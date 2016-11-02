@@ -8,15 +8,17 @@
 
 namespace app\models;
 
+use yii\db\ActiveRecord;
+
 /**
  * Description of journal
  *
  * @author
  */
-class log extends CActiveRecord
+class Log extends ActiveRecord
 {
-    public static function model($className=__CLASS__)
+    public static function log()
     {
-        return parent::model($className);
+        return 'log';
     }
 }

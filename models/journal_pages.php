@@ -8,15 +8,17 @@
 
 namespace app\models;
 
+use yii\db\ActiveRecord;
+
 /**
  * Description of journal
  *
  * @author
  */
-class journal_pages extends CActiveRecord
+class Journal_pages extends ActiveRecord
 {
-    public static function model($className=__CLASS__)
+    public static function journal_pages()
     {
-        return parent::model($className);
+        return 'journal_pages';
     }
 }

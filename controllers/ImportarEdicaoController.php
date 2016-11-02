@@ -8,7 +8,8 @@ use yii\web\Controller;
 use app\models\journal;
 use app\models\journal_pages;
 use app\models\log;
-use Smalot\PdfParser;
+use app\lib\PDF2Text\pdf2text;
+
 
 class ImportarEdicaoController extends Controller
 {
@@ -23,41 +24,42 @@ class ImportarEdicaoController extends Controller
     /**
      * @inheritdoc
      */
-    public function processaPdf()
+    public function actionProcessaPdf()
     {
-        
         $pdfPendente = $this->listaPdfPendente();
-        
-        // loop nos registro do banco
-        foreach ($pdfPendente['pdfDb'] as $journal) {
-            
-            // verifica se pdf não existe
-            $pathCompleto = $journal['path'].$journal['file_name'];
-            if(!is_file($pathCompleto)){
-                $this->logErro(['message'=>'O PDF (' . $pathCompleto . ') não foi encontrado.']);
-                continue;
-            }
-            
-            try {
-                // le pdf
-                $textPDF = $this->lerPdf($pathCompleto);
+        // loop nos registro do banco se existir
+        if($pdfPendente['pdfDb']){
+            foreach ($pdfPendente['pdfDb'] as $journal) {
 
-                // trata pdf
-                $textPDFTratado = $this->trataPdf($textPDF);
+                // verifica se pdf não existe
+                $pathCompleto = 'uploads/unprocessed/' . $journal->file_name;
+                if(!is_file($pathCompleto)){
+                    $this->logErro(['message'=>'O PDF (' . $pathCompleto . ') não foi encontrado.']);
+                    continue;
+                }
 
-                // salva pdf no banco e move o arquivo
-                $this->salvaMovePdf([
-                    'id_journal'=>$journal['id_journal'],
-                    'content'=>$textPDFTratado,
-                    'page_number'=>0,
-                    'path'=>$journal['path'],
-                    'file_name'=>$journal['file_name'],
-                    ]);
-                
-            } catch (\Exception $e) {
-                continue;
-            }
         
+                try {
+                    // le pdf
+                    $textPDF = $this->lerPdf($pathCompleto);
+                    
+                    // trata pdf
+                    $textPDFTratado = $this->trataPdf($textPDF);
+
+                    // salva pdf no banco e move o arquivo
+                    $this->salvaMovePdf([
+                        'id_journal'=>$journal->id_journal,
+                        'content'=>$textPDFTratado,
+                        'page_number'=>0,
+                        'path'=>$journal->path,
+                        'file_name'=>$journal->file_name,
+                        ]);
+
+                } catch (\Exception $e) {
+                    continue;
+                }
+
+            }
         }
     }
     
@@ -68,7 +70,7 @@ class ImportarEdicaoController extends Controller
     {
         // busca pdf pendente no banco
         $sql = "SELECT id_journal,journal_number,file_name,path FROM journal WHERE processing_date IS NULL ORDER BY upload_date";
-        $pdfDb = journal::findBySql($sql)->all();
+        $pdfDb = Journal::findBySql($sql)->all();
         
         // busca pdf pendente na pasta
         // $pdfPasta = CFileHelper::findFiles("/uploads/unprocessed/");
@@ -83,12 +85,14 @@ class ImportarEdicaoController extends Controller
     private function lerPdf($path)
     {
         try {
-            $parser = new PdfParser\Parser();
-            $pdf = $parser->parseFile($path);
-            $text = $pdf->getText();
+            $pdf = new PDF2Text();
+            $pdf->setFilename($path);
+            $pdf->decodePDF();
+            $text = $pdf->output(true);
             
+            exit();
         } catch (\Exception $e) {
-            $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')']);
+            $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
             throw $e;
             
         }
@@ -115,31 +119,31 @@ class ImportarEdicaoController extends Controller
     /**
      * @inheritdoc
      */
-    private function salvaPdf($data)
+    private function salvaMovePdf($data)
     {
-        $connecton = Yii::app()->db;
+        $connecton = \Yii::$app->db;
         $transaction = $connecton->beginTransaction();
         
         try {
 
             // atualiza data do processamento do PDF
-            $journal = journal::findOne($data['id_journal']);
+            $journal = Journal::findOne($data['id_journal']);
             $journal->processing_date = Date('Y-m-d H:i:s');
             $journal->save();
             
             // cadastra as paginas do jornal
-            $journal_pages = new journal_pages();
+            $journal_pages = new Journal_pages();
             $journal_pages->id_journal = $data['id_journal'];
             $journal_pages->content = $data['content'];
             $journal_pages->page_number = $data['page_number'];
             $journal_pages->save();
 
             // move pdf
-            $this->movePdf('uploads/unprocessed/' . $data['file_name'], 'uploads/processed/' . $data['path']);
+            $this->movePdf('uploads/unprocessed/' . $data['file_name'], 'uploads/processed/' . $data['path'] . $data['file_name']);
             
             $transaction->commit();
 
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $transaction->rollBack();
             $this->logErro(['message'=>'Journal Number ('.$data['journal_number'].') - ' . $e]);
             throw $e;
@@ -154,7 +158,7 @@ class ImportarEdicaoController extends Controller
      */
     private function movePdf($origem, $destino)
     {
-        if(!$this->verificaPath($destino)){
+        if(!($this->verificaPath($destino))){
             throw new Exception('Erro ao tentar criar o diretórios "'.$destino.'"');
         }
         
@@ -179,8 +183,10 @@ class ImportarEdicaoController extends Controller
         foreach ($pastas as $pasta) {
             $dir .= $pasta.'/';
             if(!is_dir($dir)){
-                if(!mkdir($dir, 0777)){
+                if(!mkdir($dir, 0755)){
                     return false;
+                } else {
+                    chmod($dir, 0755);
                 }
             }
         }
@@ -196,11 +202,11 @@ class ImportarEdicaoController extends Controller
     {
         if(isset($log['message'])){
             
-            $log = new log();
-            $log->message = $log['message'];
-            $log->error = (isset($log['error'])) ? $log['error'] : "";
-            $log->type = $this->typeLog;
-            $log->save();
+            $Log = new Log();
+            $Log->message = $log['message'];
+            $Log->error = (isset($log['error'])) ? $log['error'] : "";
+            $Log->type = $this->typeLog;
+            $Log->save();
 
             // envia email
             if($enviaEmail){
