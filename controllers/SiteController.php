@@ -71,7 +71,16 @@ class SiteController extends Controller
      */
     public function actionTeste()
     {
-        echo'teste'; 
+        
+        set_time_limit(0);
+          ini_set('memory_limit','-1');
+       $parser = new \Smalot\PdfParser\Parser();
+       
+       $pdf = $parser->parseFile('C:\SERVER\www\abio\controllers\01.pdf'); 
+       $text = $pdf->getText(); 
+       echo $text; 
+
+
         die;
     }
 
