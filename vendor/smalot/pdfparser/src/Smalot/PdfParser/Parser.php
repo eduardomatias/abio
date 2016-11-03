@@ -103,6 +103,7 @@ class Parser
         $this->objects = array();
 
         foreach ($data as $id => $structure) {
+          
             $this->parseObject($id, $structure, $document);
             unset($data[$id]);
         }
@@ -163,60 +164,63 @@ class Parser
                     $header = $this->parseHeader($part[1], $document);
                     break;
 
-                case 'stream':
-                    $content = isset($part[3][0]) ? $part[3][0] : $part[1];
-
-                    if ($header->get('Type')->equals('ObjStm')) {
-                        $match = array();
-
-                        // Split xrefs and contents.
-                        preg_match('/^((\d+\s+\d+\s*)*)(.*)$/s', $content, $match);
-                        $content = $match[3];
-
-                        // Extract xrefs.
-                        $xrefs = preg_split(
-                            '/(\d+\s+\d+\s*)/s',
-                            $match[1],
-                            -1,
-                          PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE
-                        );
-                        $table = array();
-
-                        foreach ($xrefs as $xref) {
-                            list($id, $position) = explode(' ', trim($xref));
-                            $table[$position] = $id;
-                        }
-
-                        ksort($table);
-
-                        $ids       = array_values($table);
-                        $positions = array_keys($table);
-
-                        foreach ($positions as $index => $position) {
-                            $id            = $ids[$index] . '_0';
-                            $next_position = isset($positions[$index + 1]) ? $positions[$index + 1] : strlen($content);
-                            $sub_content   = substr($content, $position, $next_position - $position);
-
-                            $sub_header         = Header::parse($sub_content, $document);
-                            $object             = Object::factory($document, $sub_header, '');
-                            $this->objects[$id] = $object;
-                        }
-
-                        // It is not necessary to store this content.
-                        $content = '';
-
-                        return;
-                    }
-                    break;
+//                case 'stream':
+//                    $content = isset($part[3][0]) ? $part[3][0] : $part[1];
+//
+//                    if ($header->get('Type')->equals('ObjStm')) {
+//                        $match = array();
+//  if($id==48){
+//            $a1=1;
+//          
+//            }
+//                        // Split xrefs and contents.
+//                        preg_match('/^((\d+\s+\d+\s*)*)(.*)$/si', $content, $match);
+//                        $content = $match[3];
+//
+//                        // Extract xrefs.
+//                        $xrefs = preg_split(
+//                            '/(\d+\s+\d+\s*)/s',
+//                            $match[1],
+//                            -1,
+//                          PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE
+//                        );
+//                        $table = array();
+//
+//                        foreach ($xrefs as $xref) {
+//                            list($id, $position) = explode(' ', trim($xref));
+//                            $table[$position] = $id;
+//                        }
+//
+//                        ksort($table);
+//
+//                        $ids       = array_values($table);
+//                        $positions = array_keys($table);
+//
+//                        foreach ($positions as $index => $position) {
+//                            $id            = $ids[$index] . '_0';
+//                            $next_position = isset($positions[$index + 1]) ? $positions[$index + 1] : strlen($content);
+//                            $sub_content   = substr($content, $position, $next_position - $position);
+//
+//                            $sub_header         = Header::parse($sub_content, $document);
+//                            $object             = Object::factory($document, $sub_header, '');
+//                            $this->objects[$id] = $object;
+//                        }
+//
+//                        // It is not necessary to store this content.
+//                        $content = '';
+//
+//                        return;
+//                    }
+//                    break;
 
                 default:
-                    if ($part != 'null') {
-                        $element = $this->parseHeaderElement($part[0], $part[1], $document);
-
-                        if ($element) {
-                            $header = new Header(array($element), $document);
-                        }
-                    }
+//                    if ($part != 'null') {
+//                        $element = $this->parseHeaderElement($part[0], $part[1], $document);
+//
+//                        if ($element) {
+//                            $header = new Header(array($element), $document);
+//                        }
+//                    }
                     break;
 
             }
