@@ -5,7 +5,7 @@ namespace app\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use app\models\journal;
+use app\models\journal_session;
 use app\models\journal_pages;
 use app\models\log;
 use app\lib\PDF2Text\PDF2Text;
@@ -37,27 +37,27 @@ class ImportarEdicaoController extends Controller
                     continue;
                 }
 
-        
                 try {
+                    
                     // le pdf
                     $textPDF = $this->lerPdf($pathCompleto);
                     
-                    // trata pdf
-                    $textPDFTratado = $this->trataPdf($textPDF);
+                    if(is_array($textPDF)){
 
-                    // salva pdf no banco e move o arquivo
-                    $this->salvaMovePdf([
-                        'id_journal'=>$journal->id_journal,
-                        'content'=>$textPDFTratado,
-                        'page_number'=>0,
-                        'path'=>$journal->path,
-                        'file_name'=>$journal->file_name,
-                        ]);
-
+                        // salva pdf no banco e move o arquivo
+                        $this->salvaMovePdf([
+                            'id_journal_session'=>$journal->id_journal_session,
+                            'id_journal'=>$journal->id_journal,
+                            'content'=>$textPDF,
+                            'path'=>$journal->path,
+                            'file_name'=>$journal->file_name,
+                            ]);
+                        
+                    }
+                    
                 } catch (\Exception $e) {
                     continue;
                 }
-
             }
         }
     }
@@ -67,9 +67,8 @@ class ImportarEdicaoController extends Controller
      */
     private function listaPdfPendente()
     {
-        // busca pdf pendente no banco
-        $sql = "SELECT id_journal,journal_number,file_name,path FROM journal WHERE processing_date IS NULL ORDER BY upload_date";
-        $pdfDb = Journal::findBySql($sql)->all();
+        // busca pdf pendente no banco (sem data de processamento)
+        $pdfDb = Journal_session::findAll(['processing_date' => null]);
         
         // busca pdf pendente na pasta
         // $pdfPasta = CFileHelper::findFiles("/uploads/unprocessed/");
@@ -85,22 +84,20 @@ class ImportarEdicaoController extends Controller
     {
         
         try {
+            
             $a = new PDF2Text();
             $a->setFilename($path);
             $a->decodePDF();
-            $text = $a->output();
-            /*
-            $parser = new \Smalot\PdfParser\Parser();
-            $pdf    = $parser->parseFile($path);
-            //$ttt    = $pdf->getText();
-          
-            $pages  = $pdf->getPages();
-            foreach ($pages as $page) {
-                $text[] = $page->getText();
-            }
-             * 
-             */
-            exit();
+            $textFull = $a->output(false);
+            
+            $textFullTratado = $this->trataPdf($textFull);
+
+            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
+ 
+            preg_match_all($re, $textFullTratado, $matches);
+
+            $text = preg_split('/(Página)/si', $matches[0][0]);
+            
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
             throw $e;
@@ -137,17 +134,22 @@ class ImportarEdicaoController extends Controller
         try {
 
             // atualiza data do processamento do PDF
-            $journal = Journal::findOne($data['id_journal']);
+            $journal = Journal_session::findOne($data['id_journal_session']);
             $journal->processing_date = Date('Y-m-d H:i:s');
             $journal->save();
             
-            // cadastra as paginas do jornal
-            $journal_pages = new Journal_pages();
-            $journal_pages->id_journal = $data['id_journal'];
-            $journal_pages->content = $data['content'];
-            $journal_pages->page_number = $data['page_number'];
-            $journal_pages->save();
+            
+            foreach ($data['content'] as $pg => $textPg) {
 
+                // cadastra as paginas do jornal
+                $journal_pages = new Journal_pages();
+                $journal_pages->id_journal = $data['id_journal'];
+                $journal_pages->content = $textPg;
+                $journal_pages->page_number = $pg+1;
+                $journal_pages->save();
+
+            }
+            
             // move pdf
             $this->movePdf('uploads/unprocessed/' . $data['file_name'], 'uploads/processed/' . $data['path'] . $data['file_name']);
             
@@ -155,7 +157,7 @@ class ImportarEdicaoController extends Controller
 
         } catch (\Exception $e) {
             $transaction->rollBack();
-            $this->logErro(['message'=>'Journal Number ('.$data['journal_number'].') - ' . $e]);
+            $this->logErro(['message'=>'Journal Session ('.$data['id_journal_session'].') - ' . $e]);
             throw $e;
             
         }
@@ -206,7 +208,7 @@ class ImportarEdicaoController extends Controller
     
     /**
      * @inheritdoc
-     * param $log[message, error]
+     * @param $log[message, error]
      */
     private function logErro($log, $enviaEmail = false)
     {
