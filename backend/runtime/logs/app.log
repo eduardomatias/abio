@@ -1,0 +1,161 @@
+2016-11-14 18:35:28 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in C:\SERVER\www\abio\vendor\yiisoft\yii2\rest\IndexAction.php:61
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\IndexAction->run()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\SERVER\www\abio\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-14 18:35:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'api'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/backend/web/index.php'
+    'REMOTE_PORT' => '61808'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=api'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479144928.021
+    'REQUEST_TIME' => 1479144928
+]
+2016-11-14 18:35:28 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in C:\SERVER\www\abio\vendor\yiisoft\yii2\rest\IndexAction.php:61
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\IndexAction->run()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\SERVER\www\abio\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-14 18:35:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'api'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/backend/web/index.php'
+    'REMOTE_PORT' => '61809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=api'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479144928.132
+    'REQUEST_TIME' => 1479144928
+]
+2016-11-14 18:35:43 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in C:\SERVER\www\abio\vendor\yiisoft\yii2\rest\IndexAction.php:61
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): yii\rest\IndexAction->run()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php(92): ::call_user_func_array:{C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Action.php:92}()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\Action->runWithParams()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 C:\SERVER\www\abio\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-14 18:35:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'api'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'qjgk8ntcopb5382v75nblr5up2'
+    '_csrf-frontend' => 'e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=qjgk8ntcopb5382v75nblr5up2; _csrf-frontend=e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/backend/web/index.php'
+    'REMOTE_PORT' => '61812'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=api'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479144942.984
+    'REQUEST_TIME' => 1479144942
+]

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers;
+namespace backend\controllers;
 
 use Yii;
 use yii\rest\ActiveController;
@@ -11,6 +11,8 @@ use yii\data\ActiveDataProvider;
 class ApiController extends ActiveController
 {
    public $modelClass = 'app\models\User';
+   
+   
   
  public function behaviors()
   {
@@ -36,16 +38,18 @@ class ApiController extends ActiveController
      * @return ActiveDataProvider
      */
     public function actionJournal()
-    {
+    {   
+        header("Access-Control-Allow-Origin: *");
+        
         $query = new \yii\db\Query(); 
         
-        $query->select(["DATE_FORMAT(journal.publish_date, '%d/%M/%Y') AS NAME","session.name", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullpath"])
+        $query->select(["DATE_FORMAT(journal.publish_date, '%d/%M/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
               ->limit('7');
         
-        return new ActiveDataProvider([
+                return new ActiveDataProvider([
             'query' => $query,
         ]);
     }
