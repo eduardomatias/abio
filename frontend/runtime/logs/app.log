@@ -1,0 +1,1018 @@
+2016-11-11 02:07:00 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(370): yii\db\Command->queryScalar()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(144): yii\db\Query->exists()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+The SQL being executed was: SELECT EXISTS(SELECT * FROM `user` WHERE `username`='charaln')' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT EXISTS(S...')
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(370): yii\db\Command->queryScalar()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(144): yii\db\Query->exists()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'username' in 'where clause'
+)
+
+2016-11-11 02:06:59 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826419.902
+    'REQUEST_TIME' => 1478826419
+]
+2016-11-11 02:07:21 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'where clause'' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(370): yii\db\Command->queryScalar()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(144): yii\db\Query->exists()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'where clause'
+The SQL being executed was: SELECT EXISTS(SELECT * FROM `user` WHERE `email`='charlan.job@gmail.com')' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT EXISTS(S...')
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(370): yii\db\Command->queryScalar()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(144): yii\db\Query->exists()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'email' in 'where clause'
+)
+
+2016-11-11 02:07:21 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60829'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826441.191
+    'REQUEST_TIME' => 1478826441
+]
+2016-11-11 02:07:43 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::password_hash' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('password_hash', '$2y$13$19o4hdfp...')
+#1 C:\SERVER\www\abiot\advanced\common\models\User.php(163): yii\db\BaseActiveRecord->__set('password_hash', '$2y$13$19o4hdfp...')
+#2 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(53): common\models\User->setPassword('123456')
+#3 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#4 [internal function]: frontend\controllers\SiteController->actionSignup()
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-11 02:07:42 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60841'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826462.495
+    'REQUEST_TIME' => 1478826462
+]
+2016-11-11 02:09:03 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::auth_key' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('auth_key', '6Xm-VFk7h7HGCfF...')
+#1 C:\SERVER\www\abiot\advanced\common\models\User.php(171): yii\db\BaseActiveRecord->__set('auth_key', '6Xm-VFk7h7HGCfF...')
+#2 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(54): common\models\User->generateAuthKey()
+#3 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#4 [internal function]: frontend\controllers\SiteController->actionSignup()
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-11 02:09:03 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826543.135
+    'REQUEST_TIME' => 1478826543
+]
+2016-11-11 02:09:17 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\User::status' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('status')
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\DefaultValueValidator.php(46): yii\db\BaseActiveRecord->__get('status')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\DefaultValueValidator->validateAttribute(Object(common\models\User), 'status')
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(421): yii\base\Model->validate(NULL)
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(56): yii\db\BaseActiveRecord->save()
+#7 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2016-11-11 02:09:16 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826556.902
+    'REQUEST_TIME' => 1478826556
+]
+2016-11-11 02:09:36 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::created_at' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('created_at', 1478826576)
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(121): yii\db\BaseActiveRecord->__set('created_at', 1478826576)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(927): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(453): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#8 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(56): yii\db\BaseActiveRecord->save()
+#9 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#10 [internal function]: frontend\controllers\SiteController->actionSignup()
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#14 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#15 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-11 02:09:35 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826575.358
+    'REQUEST_TIME' => 1478826575
+]
+2016-11-11 02:09:45 [::1][-][bn5faebqfbjn2djio3thgic3m6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::updated_at' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('updated_at', 1478826585)
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\behaviors\AttributeBehavior.php(121): yii\db\BaseActiveRecord->__set('updated_at', 1478826585)
+#2 [internal function]: yii\behaviors\AttributeBehavior->evaluateAttributes(Object(yii\base\ModelEvent))
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ModelEvent))
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(927): yii\base\Component->trigger('beforeInsert', Object(yii\base\ModelEvent))
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(453): yii\db\BaseActiveRecord->beforeSave(true)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(632): yii\db\ActiveRecord->insert(true, NULL)
+#8 C:\SERVER\www\abiot\advanced\frontend\models\SignupForm.php(56): yii\db\BaseActiveRecord->save()
+#9 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#10 [internal function]: frontend\controllers\SiteController->actionSignup()
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#14 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#15 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-11 02:09:44 [::1][-][bn5faebqfbjn2djio3thgic3m6][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'S0JPeUhUeE0acH0NGw1BLDkkOgAvLh8GGy0iCAE2GyARFHsuCzwPDw=='
+    'SignupForm' => [
+        'username' => 'charaln'
+        'email' => 'charlan.job@gmail.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    'advanced-frontend' => 'bn5faebqfbjn2djio3thgic3m6'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; advanced-frontend=bn5faebqfbjn2djio3thgic3m6; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826584.671
+    'REQUEST_TIME' => 1478826584
+]
+2016-11-11 02:09:54 [::1][-][lld9k917bk723ttq6bsj0dv5n6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\SERVER\www\abiot\advanced\common\models\User.php(64): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(665): common\models\User::findIdentity('<span class="nu...')
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#10 C:\SERVER\www\abiot\advanced\frontend\views\layouts\main.php(42): yii\base\Component->__get('<span class="st...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\SERVER\\www\\a...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#14 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#15 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('<span class="st...')
+#16 [internal function]: frontend\controllers\SiteController->actionIndex()
+#17 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#18 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#19 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#20 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#21 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+The SQL being executed was: SELECT * FROM `user` WHERE (`id`=2) AND (`status`=10)' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 C:\SERVER\www\abiot\advanced\common\models\User.php(64): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(665): common\models\User::findIdentity('<span class="nu...')
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#10 C:\SERVER\www\abiot\advanced\frontend\views\layouts\main.php(42): yii\base\Component->__get('<span class="st...')
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\View.php(326): require('C:\\SERVER\\www\\a...')
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#13 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#14 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<span class="st...')
+#15 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('<span class="st...')
+#16 [internal function]: frontend\controllers\SiteController->actionIndex()
+#17 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#18 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#19 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#20 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#21 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'id' in 'where clause'
+)
+
+2016-11-11 02:09:54 [::1][-][lld9k917bk723ttq6bsj0dv5n6][info][application] $_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+    'advanced-frontend' => 'lld9k917bk723ttq6bsj0dv5n6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D; advanced-frontend=lld9k917bk723ttq6bsj0dv5n6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60895'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826594.085
+    'REQUEST_TIME' => 1478826594
+]
+2016-11-11 02:10:49 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\User::password_reset_token' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('password_reset_...')
+#1 C:\SERVER\www\abiot\advanced\frontend\models\PasswordResetRequestForm.php(50): yii\db\BaseActiveRecord->__get('password_reset_...')
+#2 C:\SERVER\www\abiot\advanced\frontend\controllers\SiteController.php(174): frontend\models\PasswordResetRequestForm->sendEmail()
+#3 [internal function]: frontend\controllers\SiteController->actionRequestPasswordReset()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('request-passwor...', Array)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/request-pa...', Array)
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\SERVER\www\abiot\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-11 02:10:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'RFBwYTlQMmMVYkIVagkLAjY2BRheKlUoFD8dEHAyUQ4eBkQ2ejhFIQ=='
+    'PasswordResetRequestForm' => [
+        'email' => 'charlan.job@gmail.com'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1\";}'
+    'advanced-backend' => '6pv22rcbb33u00i3kvltnbo9v1'
+    '_csrf-backend' => 'cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux\";}'
+    '_csrf-frontend' => '9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Q22tSY9arfuygzgKPomqIbcmZV4WChwB\";}'
+    'advanced-frontend' => 'jgctoh0tlshp2t7i4r1las8vl4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '135'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abiot/advanced/frontend/web/index.php?r=site%2Frequest-password-reset'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=26e281f8efc8b77bb4b6d93737f190e4225414f887672d0366f19035b2cd5a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XLdKcIQSY-c6l0Y9r-qIg7V-EHNWMyh1%22%3B%7D; advanced-backend=6pv22rcbb33u00i3kvltnbo9v1; _csrf-backend=cd38d1a2774d297b635cbb5b5e8eeb54e2fa760acded92fd60a3e62b1bed7c12a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OL4m6aYwhJf3c3D1K7rNHdOwgQWteyux%22%3B%7D; _csrf-frontend=9ba62d0b88a28348d014c8b626ef74ab2be8012515683269eb0ba1d3da91ef41a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Q22tSY9arfuygzgKPomqIbcmZV4WChwB%22%3B%7D; advanced-frontend=jgctoh0tlshp2t7i4r1las8vl4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abiot/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/abiot/advanced/frontend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/abiot/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/abiot/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478826649.795
+    'REQUEST_TIME' => 1478826649
+]
+2016-11-11 21:43:55 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\SERVER\www\abio\frontend\views\site\index.php' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\SERVER\\www\\a...', Array, Object(frontend\controllers\SiteController))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#2 C:\SERVER\www\abio\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#3 [internal function]: frontend\controllers\SiteController->actionIndex()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-11 21:43:55 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '51603'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/abio/frontend/web/'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478897035.013
+    'REQUEST_TIME' => 1478897035
+]
+2016-11-14 18:07:42 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\ApiController' in file: C:\SERVER\www\abio/frontend/controllers/ApiController.php. Namespace missing?' in C:\SERVER\www\abio\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): class_exists('frontend\\contro...')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('api')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('api/journal')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('api/journal', Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-14 18:07:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'api/journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'qjgk8ntcopb5382v75nblr5up2'
+    '_csrf-frontend' => 'e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=qjgk8ntcopb5382v75nblr5up2; _csrf-frontend=e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '61046'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api/journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=api/journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479143262.299
+    'REQUEST_TIME' => 1479143262
+]
+2016-11-14 18:08:19 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\ApiController' in file: C:\SERVER\www\abio/frontend/controllers/ApiController.php. Namespace missing?' in C:\SERVER\www\abio\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): class_exists('frontend\\contro...')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('api')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('api')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('api', Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-14 18:08:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'api'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'qjgk8ntcopb5382v75nblr5up2'
+    '_csrf-frontend' => 'e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=qjgk8ntcopb5382v75nblr5up2; _csrf-frontend=e4307287897501194b92232b2cc9cd10d614a7aa5627608575366387caa41e39a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Msp8Ps-aZRx4Xp-RUoJe3VM0qiOJImqA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '61073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=api'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479143299.479
+    'REQUEST_TIME' => 1479143299
+]

@@ -7,12 +7,12 @@ use yii\web\AssetBundle;
 /**
  * Main frontend application asset bundle.
  */
-class AppAsset extends AssetBundle
+class UploadFileAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath = '@vendor/bower/blueimp-file-upload';
+    
     public $css = [
-        'css/site.css',
+        'css/style.css',
     ];
     public $js = [
     ];
