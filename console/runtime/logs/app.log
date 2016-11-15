@@ -1,0 +1,112 @@
+2016-11-11 02:03:33 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Migration.php(261): yii\db\Command->execute()
+#2 C:\SERVER\www\abiot\advanced\console\migrations\m130524_201442_init.php(26): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(651): m130524_201442_init->up()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(163): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\SERVER\www\abiot\advanced\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\db\Migration.php(261): yii\db\Command->execute()
+#2 C:\SERVER\www\abiot\advanced\console\migrations\m130524_201442_init.php(26): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(651): m130524_201442_init->up()
+#4 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(163): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#9 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\SERVER\www\abiot\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\SERVER\www\abiot\advanced\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2016-11-11 02:03:30 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\charlan\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-P2DHP94'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\charlan'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'LOCALAPPDATA' => 'C:\\Users\\charlan\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-P2DHP94'
+    'MEmuHyperv_Path' => 'C:\\Program Files\\Microvirt\\MEmuHyperv'
+    'MEmu_Path' => 'C:\\Program Files\\Microvirt'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Users\\charlan\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Users\\charlan\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\charlan\\AppData\\Roaming\\npm;\"C:\\Program Files\\Git\\cmd\"'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\charlan\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\charlan\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-P2DHP94'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-P2DHP94'
+    'USERNAME' => 'charlan'
+    'USERPROFILE' => 'C:\\Users\\charlan'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\SERVER\\www\\abiot\\advanced\\'
+    'PHP_SELF' => 'C:\\SERVER\\www\\abiot\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\SERVER\\www\\abiot\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\SERVER\\www\\abiot\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\SERVER\\www\\abiot\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1478826210.6618
+    'REQUEST_TIME' => 1478826210
+    'argv' => [
+        0 => 'C:\\SERVER\\www\\abiot\\advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
