@@ -19,7 +19,7 @@ class DhtmlxAsset extends AssetBundle
 		'custom_scroll/customscroll.css',        
     ];
     public $js = [
-		'dhtmlx/terrace/dhtmlx.js',
+		'dhtmlx/dhtmlx.js',
 		'blockUI/jquery.blockUI.js',		
 		'custom_scroll/customscroll.js',
 		'jquery/lib.js',
