@@ -84,7 +84,7 @@ class ApiController extends ActiveController
         
         $query = new \yii\db\Query(); 
         
-        $query->select(["DATE_FORMAT(journal.publish_date, '%d/%M/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
+        $query->select(["DATE_FORMAT(journal.publish_date, '%m/%d/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
