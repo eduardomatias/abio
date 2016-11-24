@@ -76,13 +76,13 @@ $this->title = 'Caderno de edições';
 	window.testeLayout.cells("a").setText('Jornais cadastrados');
 			
 	gridJournal = window.testeLayout.cells("a").attachGrid();
-        gridJournal.setHeader("Data,Jornal,Usuário,Excluir");
-        gridJournal.setInitWidths("100,*,100,100");
-        gridJournal.setColAlign("center,left,left,center");
-        gridJournal.setColTypes("ro,ro,ro,img");
+        gridJournal.setHeader("Data,Jornal,Usuário");
+        gridJournal.setInitWidths("100,*,100");
+        gridJournal.setColAlign("center,left,left");
+        gridJournal.setColTypes("ro,ro,ro");
         gridJournal.init();
         gridJournal.recarregaGrid = function() {
-            //gridJournal.load('index.php?r=caderno-edicoes/grid-journal');
+            gridJournal.load('index.php?r=caderno-edicoes/grid-journal');
         }
         gridJournal.recarregaGrid();
         
