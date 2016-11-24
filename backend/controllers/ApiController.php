@@ -88,7 +88,8 @@ class ApiController extends ActiveController
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
-              ->where(['journal.publish_date' => $date])
+              ->where(['journal.publish_date' => $date])              
+              ->orderBy('session.name ASC')
               ->limit('7');
         
          return new ActiveDataProvider([
