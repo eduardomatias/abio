@@ -45,5 +45,8 @@ return [
         ],
         */
     ],
+     'aliases' => [
+        '@assetsPath' => '../../vendor',
+    ],
     'params' => $params,
 ];
