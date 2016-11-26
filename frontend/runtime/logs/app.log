@@ -6217,3 +6217,1881 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479954993.037
     'REQUEST_TIME' => 1479954993
 ]
+2016-11-26 20:50:42 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:50:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54059'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189841.849
+    'REQUEST_TIME' => 1480189841
+]
+2016-11-26 20:50:44 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:50:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189844.579
+    'REQUEST_TIME' => 1480189844
+]
+2016-11-26 20:52:18 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:52:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189937.951
+    'REQUEST_TIME' => 1480189937
+]
+2016-11-26 20:52:19 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:52:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54113'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189939.149
+    'REQUEST_TIME' => 1480189939
+]
+2016-11-26 20:53:03 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:53:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189983.622
+    'REQUEST_TIME' => 1480189983
+]
+2016-11-26 20:53:04 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:53:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189984.656
+    'REQUEST_TIME' => 1480189984
+]
+2016-11-26 20:54:21 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch()
+#4 {main}
+2016-11-26 20:54:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190061.662
+    'REQUEST_TIME' => 1480190061
+]
+2016-11-26 20:55:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\SERVER\www\abio\frontend\controllers\CadernoEdicoesController.php:141
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::spl_autoload_call('???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::class_exists('???')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('???', '???')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest('???')
+#6 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-26 20:55:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190127.208
+    'REQUEST_TIME' => 1480190127
+]
+2016-11-26 20:55:27 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(247): yii\log\Logger->flush('???')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(0): yii\base\ErrorHandler->handleFatalError()
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): yii\BaseYii::autoload('???')
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::spl_autoload_call('???')
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::class_exists('???')
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('???')
+#10 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('???')
+#11 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('???', '???')
+#12 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest('???')
+#13 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2016-11-26 20:55:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ga=GA1.1.268078950.1480178152; _csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190127.208
+    'REQUEST_TIME' => 1480190127
+]
+2016-11-26 20:55:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 {main}
+2016-11-26 20:55:38 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54200'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/abio/frontend/web/'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190137.965
+    'REQUEST_TIME' => 1480190137
+]
+2016-11-26 20:55:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 {main}
+2016-11-26 20:55:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54200'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190138.499
+    'REQUEST_TIME' => 1480190138
+]
+2016-11-26 20:56:38 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function all() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2016-11-26 20:55:46 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54201'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190146.562
+    'REQUEST_TIME' => 1480190146
+]
+2016-11-26 20:56:38 [::1][-][7b9a47r7qb6hlqtvh542is8o06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(247): yii\log\Logger->flush('???')
+#5 {main}
+2016-11-26 20:55:46 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54201'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190146.562
+    'REQUEST_TIME' => 1480190146
+]
+2016-11-26 20:56:46 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function all() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2016-11-26 20:56:40 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54226'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190200.55
+    'REQUEST_TIME' => 1480190200
+]
+2016-11-26 20:56:46 [::1][-][7b9a47r7qb6hlqtvh542is8o06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(247): yii\log\Logger->flush('???')
+#5 {main}
+2016-11-26 20:56:40 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54226'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190200.55
+    'REQUEST_TIME' => 1480190200
+]
+2016-11-26 20:56:50 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function all() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2016-11-26 20:56:47 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54235'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190206.948
+    'REQUEST_TIME' => 1480190206
+]
+2016-11-26 20:56:50 [::1][-][7b9a47r7qb6hlqtvh542is8o06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(247): yii\log\Logger->flush('???')
+#5 {main}
+2016-11-26 20:56:47 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54235'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190206.948
+    'REQUEST_TIME' => 1480190206
+]
+2016-11-26 20:57:47 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function all() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2016-11-26 20:56:51 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190211.124
+    'REQUEST_TIME' => 1480190211
+]
+2016-11-26 20:57:47 [::1][-][7b9a47r7qb6hlqtvh542is8o06][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 22 of 17172 bytes' 
+
+in C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('???', '???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect('???', '???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch('???', '???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ErrorHandler.php(247): yii\log\Logger->flush('???')
+#5 {main}
+2016-11-26 20:56:51 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190211.124
+    'REQUEST_TIME' => 1480190211
+]
+2016-11-26 20:58:25 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\assets\DhtmlxAsset' in file: C:\SERVER\www\abio\frontend/assets/DhtmlxAsset.php. Namespace missing?' in C:\SERVER\www\abio\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\assets\\Dhtm...')
+#1 C:\SERVER\www\abio\frontend\views\layouts\main.php(8): spl_autoload_call('app\\assets\\Dhtm...')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(326): require('C:\\SERVER\\www\\a...')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\SERVER\\www\\a...', Array)
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\SERVER\\www\\a...', Array, Object(frontend\controllers\SiteController))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\n<div class="lo...')
+#6 C:\SERVER\www\abio\frontend\controllers\SiteController.php(121): yii\base\Controller->render('login', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionLogin()
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2016-11-26 20:58:20 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54269'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190300.426
+    'REQUEST_TIME' => 1480190300
+]
+2016-11-26 20:59:51 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function all() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2016-11-26 20:59:49 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54286'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190389.801
+    'REQUEST_TIME' => 1480190389
+]
+2016-11-26 21:02:52 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Attribute name must contain word characters only.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php:2091
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php(1442): yii\helpers\BaseHtml::getInputName(Object(common\models\LoginForm), 'Lembrar-me')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php(1425): yii\helpers\BaseHtml::activeBooleanInput('checkbox', Object(common\models\LoginForm), 'Lembrar-me', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\widgets\ActiveField.php(567): yii\helpers\BaseHtml::activeCheckbox(Object(common\models\LoginForm), 'Lembrar-me', Array)
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2-bootstrap\ActiveField.php(212): yii\widgets\ActiveField->checkbox(Array, false)
+#4 C:\SERVER\www\abio\frontend\views\site\login.php(44): yii\bootstrap\ActiveField->checkbox()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(326): require('C:\\SERVER\\www\\a...')
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\SERVER\\www\\a...', Array)
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\SERVER\\www\\a...', Array, Object(frontend\controllers\SiteController))
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\SERVER\www\abio\frontend\controllers\SiteController.php(121): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#14 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#15 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-26 21:02:52 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54402'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190572.39
+    'REQUEST_TIME' => 1480190572
+]
+2016-11-26 21:03:04 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Attribute name must contain word characters only.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php:2091
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php(1442): yii\helpers\BaseHtml::getInputName(Object(common\models\LoginForm), 'Lembrar-me')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\helpers\BaseHtml.php(1425): yii\helpers\BaseHtml::activeBooleanInput('checkbox', Object(common\models\LoginForm), 'Lembrar-me', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\widgets\ActiveField.php(567): yii\helpers\BaseHtml::activeCheckbox(Object(common\models\LoginForm), 'Lembrar-me', Array)
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2-bootstrap\ActiveField.php(212): yii\widgets\ActiveField->checkbox(Array, false)
+#4 C:\SERVER\www\abio\frontend\views\site\login.php(44): yii\bootstrap\ActiveField->checkbox()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(326): require('C:\\SERVER\\www\\a...')
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\SERVER\\www\\a...', Array)
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\SERVER\\www\\a...', Array, Object(frontend\controllers\SiteController))
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('login', Array, Object(frontend\controllers\SiteController))
+#9 C:\SERVER\www\abio\frontend\controllers\SiteController.php(121): yii\base\Controller->render('login', Array)
+#10 [internal function]: frontend\controllers\SiteController->actionLogin()
+#11 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#14 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#15 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2016-11-26 21:03:04 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    '_gat' => '1'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; _gat=1; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '54419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480190584.37
+    'REQUEST_TIME' => 1480190584
+]
+2016-11-26 23:07:03 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in C:\SERVER\www\abio\frontend\controllers\CadernoEdicoesController.php:141
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::spl_autoload_call('???')
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): ::class_exists('???')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('???')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('???')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('???', '???')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest('???')
+#6 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-26 23:07:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '55830'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480198023.359
+    'REQUEST_TIME' => 1480198023
+]
+2016-11-26 23:09:20 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('request-passwor...', Array)
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/request-pa...', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-26 23:09:20 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=site%2Frequest'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '55909'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480198160.549
+    'REQUEST_TIME' => 1480198160
+]
+2016-11-26 23:09:51 [::1][-][7b9a47r7qb6hlqtvh542is8o06][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/request-password-reset' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('request-passwor...', Array)
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/request-pa...', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-26 23:09:51 [::1][-][7b9a47r7qb6hlqtvh542is8o06][info][application] $_GET = [
+    'r' => 'site/request-password-reset'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    'advanced-frontend' => '7b9a47r7qb6hlqtvh542is8o06'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=site%2Frequest'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; advanced-frontend=7b9a47r7qb6hlqtvh542is8o06; _ga=GA1.1.268078950.1480178152; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '55931'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frequest-password-reset'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Frequest-password-reset'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480198191.385
+    'REQUEST_TIME' => 1480198191
+]
+2016-11-26 23:14:04 [::1][1][eelesnmfphjacubp5qcv2tqe17][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'session_regenerate_id(): Session object destruction failed' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Session.php:282
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\User.php(626): yii\web\Session->regenerateID()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\User.php(248): yii\web\User->switchIdentity()
+#2 C:\SERVER\www\abio\common\models\LoginForm.php(65): yii\web\User->login()
+#3 C:\SERVER\www\abio\frontend\controllers\SiteController.php(116): common\models\LoginForm->login()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\SiteController->actionLogin()
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction()
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-26 23:14:03 [::1][1][eelesnmfphjacubp5qcv2tqe17][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'WFVnc24uZHJgCiUVOkkFIiwHMCoqaw8iMzcCBx1MVTVhDC8rOFkxAA=='
+    'LoginForm' => [
+        'username' => 'charlan'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'eelesnmfphjacubp5qcv2tqe17'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '222'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=eelesnmfphjacubp5qcv2tqe17'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '56146'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480198443.448
+    'REQUEST_TIME' => 1480198443
+]
+2016-11-26 23:32:09 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown bootstrapping component ID: debug' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php:306
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(67): yii\base\Application->bootstrap()
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#4 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->__construct(Array)
+#5 {main}
+2016-11-26 23:32:09 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'mfn5q02nojj60sq78sjo6hqbo6'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=mfn5q02nojj60sq78sjo6hqbo6; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '56600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/abio/frontend/web/index.php'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480199529.487
+    'REQUEST_TIME' => 1480199529
+]

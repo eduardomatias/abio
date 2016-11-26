@@ -4,8 +4,8 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use app\assets\DhtmlxAsset;
-\app\assets\DhtmlxAsset::register($this);
+use frontend\assets\DhtmlxAsset;
+DhtmlxAsset::register($this);
 
 if (Yii::$app->controller->action->id === 'login') { 
 /**
