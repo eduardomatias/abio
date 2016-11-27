@@ -24,7 +24,7 @@ class CadernoEdicoesController extends SiteController
     private $dt_publicacao = null;
     private $hash = 'sASda2e2sa';
     private $file_name = '';
-    
+    public $title = 'teste';
      public function behaviors()
     {
         return [

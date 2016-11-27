@@ -26,7 +26,9 @@
         </form>-->
         <!-- /.search form -->
 
-        <?= dmstr\widgets\Menu::widget(
+        <?php 
+        /*
+        echo dmstr\widgets\Menu::widget(
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
@@ -62,7 +64,9 @@
                     ],
                 ],
             ]
-        ) ?>
+        ) ;
+        */
+        ?>
 
     </section>
 
