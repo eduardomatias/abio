@@ -25,6 +25,34 @@ class CadernoEdicoesController extends SiteController
     private $hash = 'sASda2e2sa';
     private $file_name = '';
     
+     public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    // Coloque aqui as actions que deseja liberar para usuarios visitantes 
+                    [
+                        'actions' => ['login', 'error','request'],
+                        'allow' => true,
+                    ],
+                    // Coloque aqui as actions que deseja liberar para usuarios logados acessarem diretamente
+                    [
+                        'actions' => ['logout','index', 'win-upload-caderno'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
+        ];
+    }
+    
     /**
      * @inheritdoc
      */
@@ -52,6 +80,8 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionWinUploadCaderno()
     {   
+        $this->layout = 'main-login';
+            
         $this->enableCsrfValidation = false;
         Yii::$app->session->set('id_journal', null);
         return $this->render('win-upload-caderno');

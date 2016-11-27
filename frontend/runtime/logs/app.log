@@ -8300,3 +8300,1350 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1480204837.006
     'REQUEST_TIME' => 1480204837
 ]
+2016-11-27 01:07:41 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:07:41 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58490'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205261.642
+    'REQUEST_TIME' => 1480205261
+]
+2016-11-27 01:10:27 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:10:27 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58499'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205427.221
+    'REQUEST_TIME' => 1480205427
+]
+2016-11-27 01:10:39 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:10:39 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205439.823
+    'REQUEST_TIME' => 1480205439
+]
+2016-11-27 01:10:42 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:10:41 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58504'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205441.877
+    'REQUEST_TIME' => 1480205441
+]
+2016-11-27 01:10:49 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:10:49 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205449.867
+    'REQUEST_TIME' => 1480205449
+]
+2016-11-27 01:11:10 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:11:09 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205469.878
+    'REQUEST_TIME' => 1480205469
+]
+2016-11-27 01:11:32 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CadernoEdicoesController' in file: C:\SERVER\www\abio/frontend/controllers/CadernoEdicoesController.php. Namespace missing?' in C:\SERVER\www\abio\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): class_exists('frontend\\contro...')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('caderno-edicoes')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('caderno-edicoes...')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 01:11:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58528'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205492.685
+    'REQUEST_TIME' => 1480205492
+]
+2016-11-27 01:11:58 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CadernoEdicoesController' in file: C:\SERVER\www\abio/frontend/controllers/CadernoEdicoesController.php. Namespace missing?' in C:\SERVER\www\abio\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(564): class_exists('frontend\\contro...')
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('caderno-edicoes')
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('caderno-edicoes...')
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 01:11:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205518.738
+    'REQUEST_TIME' => 1480205518
+]
+2016-11-27 01:12:04 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:12:03 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58534'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205523.925
+    'REQUEST_TIME' => 1480205523
+]
+2016-11-27 01:13:20 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:13:20 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58538'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205600.022
+    'REQUEST_TIME' => 1480205600
+]
+2016-11-27 01:13:47 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:13:47 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205627.382
+    'REQUEST_TIME' => 1480205627
+]
+2016-11-27 01:13:52 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: caderno-edicoes/sdfsdfsdf' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('sdfsdfsdf', Array)
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-27 01:13:52 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/sdfsdfsdf'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/sdfsdfsdf'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/sdfsdfsdf'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205632.199
+    'REQUEST_TIME' => 1480205632
+]
+2016-11-27 01:13:57 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: caderno-edicoes/asdasdasdasdasdad' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('asdasdasdasdasd...', Array)
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-27 01:13:57 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/asdasdasdasdasdad'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/asdasdasdasdasdad'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/asdasdasdasdasdad'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205637.873
+    'REQUEST_TIME' => 1480205637
+]
+2016-11-27 01:14:01 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:14:01 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205641.155
+    'REQUEST_TIME' => 1480205641
+]
+2016-11-27 01:14:32 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:14:32 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58587'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205672.139
+    'REQUEST_TIME' => 1480205672
+]
+2016-11-27 01:14:58 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:14:58 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205698.223
+    'REQUEST_TIME' => 1480205698
+]
+2016-11-27 01:15:06 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#9 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-27 01:15:06 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205706.707
+    'REQUEST_TIME' => 1480205706
+]
+2016-11-27 01:15:57 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\SERVER\www\abio\frontend\views\layouts\main-logai.php' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\SERVER\\www\\a...', Array, Object(frontend\controllers\CadernoEdicoesController))
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n<script>\r\n   ...')
+#2 C:\SERVER\www\abio\frontend\controllers\CadernoEdicoesController.php(85): yii\base\Controller->render('win-upload-cade...')
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionWinUploadCaderno()
+#4 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#7 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 01:15:57 [::1][1][bpbugpv7j9l1vlrgqac5msb7f4][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    '__id' => 1
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205757.144
+    'REQUEST_TIME' => 1480205757
+]
+2016-11-27 01:16:39 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: caderno-edicoes/data-journal' in C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('data-journal', Array)
+#1 C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#2 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\SERVER\www\abio\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\SERVER\www\abio\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\SERVER\www\abio\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-11-27 01:16:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/data-journal'
+]
+
+$_POST = [
+    'dt' => '2016-11-08'
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"8_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr\";}'
+    '_csrf-backend' => '4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ\";}'
+    'advanced-backend' => 'mq1u3g4or2s4vipqjopl250gu6'
+    '_ga' => 'GA1.1.268078950.1480178152'
+    'advanced-frontend' => 'bpbugpv7j9l1vlrgqac5msb7f4'
+    '_identity-frontend' => 'c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '13'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-frontend=c35e1476b28e38c8c5659b807e06b7b3429499c1e389a503b766b738f3574fe9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%228_BfTgaPtRWYDEkPkbetsb1G9YHXVwUr%22%3B%7D; _csrf-backend=4b568279ae3a9af257a412d100413ac70ce00f7ae73e2f329374d445bd21239da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22uuMr93umDhsiyyhyO9oKplnn6G1Hx1HJ%22%3B%7D; advanced-backend=mq1u3g4or2s4vipqjopl250gu6; _ga=GA1.1.268078950.1480178152; advanced-frontend=bpbugpv7j9l1vlrgqac5msb7f4; _identity-frontend=c9dcb788f569a595948fdb6d876ed7906964d5a0fcad61ae28d8470ee6605263a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\SERVIDOR\\www\\pdvsolinter\\vendor\\phalcon\\devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\SERVER\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/SERVER/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/SERVER/www/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '58658'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=caderno-edicoes/data-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/data-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205799.659
+    'REQUEST_TIME' => 1480205799
+]
