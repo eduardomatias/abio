@@ -1,5 +1,6 @@
 <?php
 return [
+    'homeUrl'=> ['caderno-edicoes'],
     'name' => 'ABIO - BACKEND',
     'components' => [
         'db' => [
