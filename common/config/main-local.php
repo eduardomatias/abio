@@ -1,5 +1,7 @@
 <?php
 return [
+         'homeUrl'=> ['caderno-edicoes'],
+    'name' => 'ABIO - BACKEND',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
