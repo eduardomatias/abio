@@ -6217,3 +6217,2742 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479954993.037
     'REQUEST_TIME' => 1479954993
 ]
+2016-11-26 19:00:48 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:141
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(564): ::spl_autoload_call()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(564): ::class_exists()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createControllerByID()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-26 19:00:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnNz38AAQEAABMvK3QAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '40510'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480183247.956
+    'REQUEST_TIME' => 1480183247
+]
+2016-11-26 19:03:23 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:56
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 19:03:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnOa38AAQEAABbOXnkAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '40594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480183403.213
+    'REQUEST_TIME' => 1480183403
+]
+2016-11-26 19:56:27 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 19:56:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDna2n8AAQEAABMyxIIAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '41962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480186586.983
+    'REQUEST_TIME' => 1480186586
+]
+2016-11-26 20:00:23 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:00:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnbx38AAQEAABbRPC0AAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480186823.719
+    'REQUEST_TIME' => 1480186823
+]
+2016-11-26 20:01:38 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:01:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDncEn8AAQEAABbQRfcAAAAL'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480186898.334
+    'REQUEST_TIME' => 1480186898
+]
+2016-11-26 20:03:34 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:03:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnchn8AAQEAABbRPDQAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42208'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480187014.41
+    'REQUEST_TIME' => 1480187014
+]
+2016-11-26 20:05:05 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:05:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnc4X8AAQEAABMyxJAAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42270'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480187105.915
+    'REQUEST_TIME' => 1480187105
+]
+2016-11-26 20:26:44 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:57
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:26:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnh9H8AAQEAABMwjwoAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188404.69
+    'REQUEST_TIME' => 1480188404
+]
+2016-11-26 20:29:35 [::1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to frontend\controllers\to_xml() must be an instance of frontend\controllers\SimpleXMLElement, instance of SimpleXMLElement given, called in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php on line 58 and defined' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:45
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-26 20:29:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnin38AAQEAABMvK5gAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188575.871
+    'REQUEST_TIME' => 1480188575
+]
+2016-11-26 20:32:04 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: object' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:48
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-26 20:32:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnjNH8AAQEAABMvK58AAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42808'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188724.616
+    'REQUEST_TIME' => 1480188724
+]
+2016-11-26 20:35:18 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /opt/lampp/htdocs/abio/frontend/views/layouts/.php' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(frontend\controllers\CadernoEdicoesController))
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('\n<script>\n    d...')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(78): yii\base\Controller->render('win-upload-cade...')
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionWinUploadCaderno()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-26 20:35:18 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnj9n8AAQEAACAO0XMAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42876'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188918.352
+    'REQUEST_TIME' => 1480188918
+]
+2016-11-26 20:35:41 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: xml' in /opt/lampp/htdocs/abio/frontend/views/default/xmlMask.php:1
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent()
+#3 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(78): yii\base\Controller->render()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionWinUploadCaderno()
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#9 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-26 20:35:41 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnkDX8AAQEAABbRPEkAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188941.722
+    'REQUEST_TIME' => 1480188941
+]
+2016-11-26 20:36:19 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: xml' in /opt/lampp/htdocs/abio/frontend/views/default/xmlMask.php:1
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/View.php(248): yii\base\View->renderPhpFile()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent()
+#3 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(78): yii\base\Controller->render()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionWinUploadCaderno()
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#9 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2016-11-26 20:36:19 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnkM38AAQEAABMzLp0AAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480188979.534
+    'REQUEST_TIME' => 1480188979
+]
+2016-11-26 20:37:00 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /opt/lampp/htdocs/abio/frontend/views/layouts/.php' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/View.php:227
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(frontend\controllers\CadernoEdicoesController))
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('\n<script>\n    d...')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(78): yii\base\Controller->render('win-upload-cade...', Array)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionWinUploadCaderno()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('win-upload-cade...', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-26 20:37:00 [::1][-][3n7sulkfi1cimiq5t3gsrpcid7][info][application] $_GET = [
+    'r' => 'caderno-edicoes/win-upload-caderno'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDnkXH8AAQEAABMvK64AAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '42940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/win-upload-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/win-upload-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480189020.621
+    'REQUEST_TIME' => 1480189020
+]
+2016-11-26 23:55:11 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\BaseActiveRecord::findAll(), called in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php on line 42 and defined' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php:114
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-26 23:54:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoStX8AAQEAACvLtHkAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480200885.585
+    'REQUEST_TIME' => 1480200885
+]
+2016-11-27 00:01:41 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: object' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:49
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-27 00:00:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoUEn8AAQEAACWxq5UAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44212'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201234.967
+    'REQUEST_TIME' => 1480201234
+]
+2016-11-27 00:07:08 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::addChild() expects parameter 2 to be string, object given' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:50
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-27 00:07:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoVmX8AAQEAACvh-pAAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44672'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201625.747
+    'REQUEST_TIME' => 1480201625
+]
+2016-11-27 00:09:32 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:54
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-27 00:09:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoWJ38AAQEAAC6O@BUAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44734'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201767.46
+    'REQUEST_TIME' => 1480201767
+]
+2016-11-27 00:10:40 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SimpleXMLElement' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:54
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-27 00:10:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoWbn8AAQEAABbPVmwAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44766'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201838.622
+    'REQUEST_TIME' => 1480201838
+]
+2016-11-27 00:11:35 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::addChild() expects parameter 2 to be string, object given' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:49
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(56): ::frontend\controllers\to_xml('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:11:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoWin8AAQEAABbPVnIAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201866.807
+    'REQUEST_TIME' => 1480201866
+]
+2016-11-27 00:22:51 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::addChild() expects parameter 2 to be string, object given' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:49
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(56): ::frontend\controllers\to_xml('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:12:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoWyX8AAQEAACUUQScAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '44840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480201929.056
+    'REQUEST_TIME' => 1480201929
+]
+2016-11-27 00:25:07 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\controllers\CadernoEdicoesController::renderPartial' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(56): yii\base\Component->__get('renderPartial')
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:23:13 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoZYX8AAQEAACvLtJQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480202593.725
+    'REQUEST_TIME' => 1480202593
+]
+2016-11-27 00:27:19 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:27:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoaVX8AAQEAAC9PQ3UAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45402'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480202837.262
+    'REQUEST_TIME' => 1480202837
+]
+2016-11-27 00:27:23 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:27:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoaW38AAQEAADHCjbAAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45404'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480202843.779
+    'REQUEST_TIME' => 1480202843
+]
+2016-11-27 00:27:29 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:27:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoaYX8AAQEAACvLtJUAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45424'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480202849.389
+    'REQUEST_TIME' => 1480202849
+]
+2016-11-27 00:32:36 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:32:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDobk38AAQEAACUUQSkAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480203155.914
+    'REQUEST_TIME' => 1480203155
+]
+2016-11-27 00:32:37 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:32:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoblX8AAQEAAC@25lIAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480203157.449
+    'REQUEST_TIME' => 1480203157
+]
+2016-11-27 00:33:14 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:33:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDobun8AAQEAABbPVnYAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480203194.728
+    'REQUEST_TIME' => 1480203194
+]
+2016-11-27 00:33:31 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Start tag expected, '&lt;' not found' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:33:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDobyn8AAQEAAC-w1swAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480203210.949
+    'REQUEST_TIME' => 1480203210
+]
+2016-11-27 00:33:37 [::1][-][-][error][Exception] exception 'yii\base\ErrorException' with message 'SimpleXMLElement::__construct(): Entity: line 1: parser error : Premature end of data in tag rows line 1' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+
+Next exception 'Exception' with message 'String could not be parsed as XML' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:42
+Stack trace:
+#0 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(0): SimpleXMLElement->__construct()
+#1 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2016-11-27 00:33:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDob0X8AAQEAACvLtJcAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '45602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480203217.34
+    'REQUEST_TIME' => 1480203217
+]
+2016-11-27 00:47:43 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(47): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:47:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDofH38AAQEAACUUQSoAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204063.214
+    'REQUEST_TIME' => 1480204063
+]
+2016-11-27 00:48:01 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(47): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:48:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDofMH8AAQEAACYRMNsAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204080.884
+    'REQUEST_TIME' => 1480204080
+]
+2016-11-27 00:48:47 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(47): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:48:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDofX38AAQEAAC9PQ3cAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46266'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204127.543
+    'REQUEST_TIME' => 1480204127
+]
+2016-11-27 00:49:41 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(50): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:49:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoflX8AAQEAACUUQSsAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46272'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204181.438
+    'REQUEST_TIME' => 1480204181
+]
+2016-11-27 00:50:31 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(50): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:50:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDofxH8AAQEAAC@25lMAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204228.078
+    'REQUEST_TIME' => 1480204228
+]
+2016-11-27 00:50:42 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(50): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:50:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDofy38AAQEAABbPVncAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204235.014
+    'REQUEST_TIME' => 1480204235
+]
+2016-11-27 00:53:41 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Journal::0' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('0')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Model.php(984): yii\db\BaseActiveRecord->__get('0')
+#2 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(50): yii\base\Model->offsetGet(0)
+#3 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2016-11-27 00:50:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDof1H8AAQEAAC-w1s0AAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480204244.104
+    'REQUEST_TIME' => 1480204244
+]
+2016-11-27 01:04:08 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function addChild() on a non-object' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:56
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-27 01:04:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDoi@H8AAQEAACvLtJoAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '46934'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal&XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205048.573
+    'REQUEST_TIME' => 1480205048
+]
+2016-11-27 01:12:59 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'in_array() expects parameter 2 to be array, null given' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:52
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#6 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2016-11-27 01:12:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDolC38AAQEAADlsljUAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '47246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205579.096
+    'REQUEST_TIME' => 1480205579
+]
+2016-11-27 01:13:19 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: row' in /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php:62
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction()
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2016-11-27 01:13:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDolH38AAQEAADmgo3kAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '47266'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205599.177
+    'REQUEST_TIME' => 1480205599
+]
+2016-11-27 01:15:37 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'order clause'' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Command.php:900
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Command.php(900): PDOStatement->execute()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(48): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#9 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#10 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'order clause'
+The SQL being executed was: SELECT `journal_number`, `publish_date` FROM `journal` WHERE deleted_date IS NULL ORDER BY `0`, `1`' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Schema.php:631
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `journal...')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /opt/lampp/htdocs/abio/frontend/controllers/CadernoEdicoesController.php(48): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\CadernoEdicoesController->actionGridJournal()
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('grid-journal', Array)
+#9 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('caderno-edicoes...', Array)
+#10 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column '0' in 'order clause'
+)
+
+2016-11-27 01:15:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'caderno-edicoes/grid-journal'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '3n7sulkfi1cimiq5t3gsrpcid7'
+    '_csrf-frontend' => '31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5\";}'
+    'advanced-backend' => 'q3qv489hi2mbnfr49ho69ch1a6'
+    '_csrf-backend' => 'e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDolqX8AAQEAADlsljYAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=3n7sulkfi1cimiq5t3gsrpcid7; _csrf-frontend=31c76e3ed1815d9b288a88bdb9981dfe9bb8eca9201bc1092c547253112c494ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rBvpJXf9b1KZfdodpVpLw3E0H_OyyzK5%22%3B%7D; advanced-backend=q3qv489hi2mbnfr49ho69ch1a6; _csrf-backend=e3ce037d49d880e7bb63c0275e13a33414b282495f9eb96f74c1065c03e93b9fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vb098HPiJ5fq-Q0O0zCuh57W89EEIQOf%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '47282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=caderno-edicoes/grid-journal'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/grid-journal'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480205737.646
+    'REQUEST_TIME' => 1480205737
+]
+2016-11-27 22:14:39 [::1][-][askbarvv00allkcdliae4d80d0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php:1020
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php(313): yii\web\Response->prepare()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2016-11-27 22:14:38 [::1][-][askbarvv00allkcdliae4d80d0][info][application] $_GET = [
+    'r' => 'caderno-edicoes/processa-caderno'
+]
+
+$_POST = [
+    'file' => '02.pdf'
+    'dt' => '2016-11-25'
+    'tp' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'askbarvv00allkcdliae4d80d0'
+    '_csrf-frontend' => 'e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDtMvn8AAQEAABIlY6gAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=askbarvv00allkcdliae4d80d0; _csrf-frontend=e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '35776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=caderno-edicoes/processa-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/processa-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480281278.908
+    'REQUEST_TIME' => 1480281278
+]
+2016-11-27 22:15:09 [::1][-][askbarvv00allkcdliae4d80d0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php:1020
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php(313): yii\web\Response->prepare()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2016-11-27 22:15:09 [::1][-][askbarvv00allkcdliae4d80d0][info][application] $_GET = [
+    'r' => 'caderno-edicoes/processa-caderno'
+]
+
+$_POST = [
+    'file' => '02.pdf'
+    'dt' => '2016-11-19'
+    'tp' => '2'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'askbarvv00allkcdliae4d80d0'
+    '_csrf-frontend' => 'e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDtM3X8AAQEAABIVtngAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=askbarvv00allkcdliae4d80d0; _csrf-frontend=e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '35802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=caderno-edicoes/processa-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/processa-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480281309.635
+    'REQUEST_TIME' => 1480281309
+]
+2016-11-27 22:30:49 [::1][-][askbarvv00allkcdliae4d80d0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php:1020
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Response.php(313): yii\web\Response->prepare()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /opt/lampp/htdocs/abio/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2016-11-27 22:30:49 [::1][-][askbarvv00allkcdliae4d80d0][info][application] $_GET = [
+    'r' => 'caderno-edicoes/processa-caderno'
+]
+
+$_POST = [
+    'file' => '03.pdf'
+    'dt' => '2016-11-21'
+    'tp' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'askbarvv00allkcdliae4d80d0'
+    '_csrf-frontend' => 'e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'id_journal' => null
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WDtQiX8AAQEAABOQ8jkAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/frontend/web/index.php?r=caderno-edicoes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=askbarvv00allkcdliae4d80d0; _csrf-frontend=e7260aecad82655ddcd6421b4ef29a48bb448eee890ef680b53573f955733620a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22iNap78epkV_2aAO6LE7EHxSMnPlAQ3C1%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/frontend/web/index.php'
+    'REMOTE_PORT' => '36794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=caderno-edicoes/processa-caderno'
+    'REQUEST_URI' => '/abio/frontend/web/index.php?r=caderno-edicoes/processa-caderno'
+    'SCRIPT_NAME' => '/abio/frontend/web/index.php'
+    'PHP_SELF' => '/abio/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480282249.244
+    'REQUEST_TIME' => 1480282249
+]

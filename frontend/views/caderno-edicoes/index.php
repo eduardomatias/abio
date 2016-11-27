@@ -44,13 +44,8 @@ $this->title = 'Caderno de edições';
         params = 'file='+file+'&dt='+dt+'&tp='+tp;
         dhtmlxAjax.post(url, params, function (a){
             if(a.xmlDoc.status === 200){
-                dhtmlx.alert ({
-                    text:"As alterações foram salvas!", 
-                    callback: function(){
-                        W.uploadCaderno.close();
-                        gridJournal.recarregaGrid();
-                    }
-                });
+                W.uploadCaderno.close();
+                gridJournal.recarregaGrid();
             }
         });
         
@@ -61,14 +56,6 @@ $this->title = 'Caderno de edições';
         W.uploadCaderno.window.attachURL('index.php?r=caderno-edicoes/win-upload-caderno');
         W.uploadCaderno.show();
     }
-	
-	var validarDataJournal = function (dt){
-		url = 'index.php?r=caderno-edicoes/data-journal';
-		params = 'dt='+dt;
-		dhtmlxAjax.post(url, params, function (a){
-			return (a.xmlDoc.response != 'existe');
-		});
-	}
     
     document.addEventListener("DOMContentLoaded", function(event) {
         
@@ -76,18 +63,36 @@ $this->title = 'Caderno de edições';
 	window.testeLayout.cells("a").setText('Jornais cadastrados');
 			
 	gridJournal = window.testeLayout.cells("a").attachGrid();
-        gridJournal.setHeader("Data,Jornal,Usuário");
+        gridJournal.setHeader("Numero,Data,Excluir");
         gridJournal.setInitWidths("100,*,100");
-        gridJournal.setColAlign("center,left,left");
-        gridJournal.setColTypes("ro,ro,ro");
+        gridJournal.setColAlign("center,left,center");
+        gridJournal.setColTypes("ro,ro,img");
         gridJournal.init();
         gridJournal.recarregaGrid = function() {
+            gridJournal.clearAll();
             gridJournal.load('index.php?r=caderno-edicoes/grid-journal');
         }
         gridJournal.recarregaGrid();
         
         W.uploadCaderno.init();
     });
+    
+    function deleteJournal(id_journal){
+        dhtmlx.confirm ({
+            text:"Deseja excluir o jornal?", 
+            callback: function(r){
+                if(r){
+                    url = 'index.php?r=caderno-edicoes/delete-journal';
+                    params = 'id_journal='+id_journal;
+                    dhtmlxAjax.post(url, params, function (a){        
+                        dhtmlx.alert({text:"Jornal excluir",callback: function(){
+                            gridJournal.recarregaGrid();
+                        }});
+                    });
+                }
+            }
+        });
+    }
     
 </script>
 
