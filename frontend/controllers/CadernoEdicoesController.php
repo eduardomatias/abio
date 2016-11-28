@@ -27,6 +27,7 @@ class CadernoEdicoesController extends SiteController
         return [
             'access' => [
                 'class' => AccessControl::className(),
+		'except' => [],
                 'rules' => [
                     // Coloque aqui as actions que deseja liberar para usuarios visitantes 
                     [
@@ -34,8 +35,7 @@ class CadernoEdicoesController extends SiteController
                         'allow' => true,
                     ],
                     // Coloque aqui as actions que deseja liberar para usuarios logados acessarem diretamente
-                    [
-                        'actions' => ['logout','index', 'win-upload-caderno', 'grid-journal', 'delete-journal','processa-caderno'],
+                    [                
                         'allow' => true,
                         'roles' => ['@'],
                     ],
