@@ -34,3 +34,8 @@ web/uploads/
 
 # vagrant runtime
 /.vagrant
+
+backend/runtime/debug/index.data
+frontend/controllers/CadernoEdicoesController.php
+frontend/runtime/debug/index.data
+frontend/runtime/logs/app.log
