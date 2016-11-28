@@ -35,7 +35,7 @@ class CadernoEdicoesController extends SiteController
                     ],
                     // Coloque aqui as actions que deseja liberar para usuarios logados acessarem diretamente
                     [
-                        'actions' => ['logout','index', 'win-upload-caderno', 'grid-journal', 'delete-journal'],
+                        'actions' => ['logout','index', 'win-upload-caderno', 'grid-journal', 'delete-journal','processa-caderno'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
