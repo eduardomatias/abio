@@ -114,7 +114,7 @@ $this->title = '';
                     url = 'index.php?r=caderno-edicoes/delete-journal';
                     params = 'id_journal='+id_journal;
                     dhtmlxAjax.post(url, params, function (a){        
-                        dhtmlx.alert({text:"Jornal excluir",callback: function(){
+                        dhtmlx.alert({text:"Jornal excluido com sucesso!",callback: function(){
                             gridJournal.recarregaGrid();
                         }});
                     });
