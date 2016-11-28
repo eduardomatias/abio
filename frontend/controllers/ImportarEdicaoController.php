@@ -19,7 +19,8 @@ class ImportarEdicaoController extends Controller
     private $emailTitulo = "";
     
     private $typeLog = 1; // importacao de edicao
-
+    
+    public function behaviors()    {        return [            'access' => [                'class' => AccessControl::className(),    'except' => [],                'rules' => [                    // Coloque aqui as actions que deseja liberar para usuarios visitantes                     [                        'actions' => ['login', 'error','request'],                        'allow' => true,                    ],                    // Coloque aqui as actions que deseja liberar para usuarios logados acessarem diretamente                    [      'allow' => true,                        'roles' => ['@'],                    ],                ],            ],            'verbs' => [                'class' => VerbFilter::className(),                'actions' => [                    'logout' => ['post'],                ],            ],        ];    }
     /**
      * @inheritdoc
      */
