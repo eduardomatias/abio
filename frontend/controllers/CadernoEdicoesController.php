@@ -1,7 +1,5 @@
 <?php
-
 namespace frontend\controllers;
-
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -12,7 +10,6 @@ use frontend\controllers\SiteController;
 use frontend\models\Journal;
 use frontend\models\Journal_pages;
 use frontend\models\Journal_session;
-
 class CadernoEdicoesController extends SiteController
 {
     
@@ -24,8 +21,8 @@ class CadernoEdicoesController extends SiteController
     private $dt_publicacao = null;
     private $hash = 'sASda2e2sa';
     private $file_name = '';
-    public $title = 'teste';
-     public function behaviors()
+    
+    public function behaviors()
     {
         return [
             'access' => [
@@ -52,7 +49,7 @@ class CadernoEdicoesController extends SiteController
             ],
         ];
     }
-    
+	
     /**
      * @inheritdoc
      */
@@ -65,14 +62,57 @@ class CadernoEdicoesController extends SiteController
      * @inheritdoc
      */
     public function actionGridJournal()
-    {         	
+    {
         Yii::$app->response->format = \yii\web\Response::FORMAT_RAW;
         $headers = Yii::$app->response->headers;
         $headers->add('Content-type', 'text/xml');
-
-        $xml = '';
         
-        return $this->renderPartial('@app/views/default/xmlMask', array("xml" => $xml));
+        $xml = new \SimpleXMLElement('<rows></rows>');
+        
+        $data = Journal::find()
+                ->select(['id_journal','journal_number','DATE_FORMAT(publish_date, \'%d/%m/%Y\') as publish_date'])
+                ->where('deleted_date IS NULL')
+                ->all();
+        
+        foreach ($data as $value) {
+            $i = 0;
+            $row = $xml->addChild('row');
+            foreach ($value as $k => $v) {
+                if(in_array($k,['publish_date','journal_number'])){
+                    $id_journal = $value['id_journal'];
+                    $row->addChild('cell', $v);
+                }
+            }
+            $row->addChild('cell', '../../vendor/dhtmlx/imgs/default/close.png^Excluir Jornal^javascript:deleteJournal('.$id_journal.')^_self');
+        }
+        
+        echo $xml->asXML(); 
+        
+        //return $this->renderPartial('@app/views/default/xmlMask', array("xml" => $xml));
+    }
+    
+    
+    /**
+     * @inheritdoc
+     */
+    public function actionDeleteJournal()
+    {
+        if(($id_journal = Yii::$app->request->post('id_journal'))){
+            $journal = Journal::findOne(['id_journal' => $id_journal]);
+            $journal->deleted_date = Date('Y-m-d H:i:s');
+            $journal->save();
+        }
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    public function actionDataJournal()
+    {         	
+        $dt = Yii::$app->request->post('dt');
+        $empresa = $this->empresa;
+	$journal = Journal::findBySql("SELECT * FROM journal WHERE publish_date='$dt' AND deleted_date IS NULL AND id_user IN(SELECT id FROM user WHERE id_company=$empresa)");
+        echo ($journal) ? 'existe' : 'não existe';
     }
     
     /**
@@ -80,8 +120,8 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionWinUploadCaderno()
     {   
-        $this->layout = 'main-login';
-            
+	$this->layout = 'main-login';
+	    
         $this->enableCsrfValidation = false;
         Yii::$app->session->set('id_journal', null);
         return $this->render('win-upload-caderno');
@@ -106,7 +146,6 @@ class CadernoEdicoesController extends SiteController
         $connecton = \Yii::$app->db;
         $transaction = $connecton->beginTransaction();
         $origem = '../../vendor/FileUpload/server/php/files/'.$file;
-
         try {
             
             // registra no banco
@@ -115,7 +154,6 @@ class CadernoEdicoesController extends SiteController
             // move pdf
             $destino = 'uploads/unprocessed/'.$this->file_name;
             //$this->movePDF($origem,$destino);
-
             // salva id do jornal na sessao
             Yii::$app->session->set('id_journal', $this->id_journal);
             
@@ -155,7 +193,6 @@ class CadernoEdicoesController extends SiteController
         return @unlink($pdf);
     }
     
- 
     /**
      * @inheritdoc
      * se não existir cria
@@ -192,7 +229,7 @@ class CadernoEdicoesController extends SiteController
             // insert journal
             $journal = new Journal();
             $journal->id_user = $this->id_usuario;
-             //$journal->journal_number = null;
+            //$journal->journal_number = null;
             $journal->publish_date = $this->dt_publicacao;
             $journal->upload_date = Date('Y-m-d H:i:s');
             $journal->save();
