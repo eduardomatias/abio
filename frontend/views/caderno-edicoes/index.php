@@ -2,11 +2,40 @@
 /* @var $this yii\web\View */
 use frontend\assets\DhtmlxAsset;
 DhtmlxAsset::register($this);
-$this->title = 'Caderno de edições';
+$this->title = '';
 ?>
 
-<input type="button" value="upload do caderno" onclick="W.enviaCanerno()" />
+<input type="button" class="btn btn-warning" value="Upload do Jornal" onclick="W.enviaCanerno()" />
+<style>
+    .content-header>h1 {
+    margin: 0;
+    font-size: 18px;
+    background-color: #c6d3db;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 17px;
+    height: 46px;
+    line-height: 25px;
+    background: rgba(242,246,248,1);
+    background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 0%, rgba(216,225,231,1) 56%, rgba(224,239,249,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(0%, rgba(181,198,208,1)), color-stop(56%, rgba(216,225,231,1)), color-stop(100%, rgba(224,239,249,1)));
+    background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 0%, rgba(216,225,231,1) 56%, rgba(224,239,249,1) 100%);
+    background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 0%, rgba(216,225,231,1) 56%, rgba(224,239,249,1) 100%);
+    background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 0%, rgba(216,225,231,1) 56%, rgba(224,239,249,1) 100%);
+    background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 0%, rgba(216,225,231,1) 56%, rgba(224,239,249,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+}
 
+
+.btn-warning {
+    background-color: #f39c12;
+    border-color: #e08e0b;
+    position: relative;
+    top: -55px;
+    float: right;
+    left: -18px;
+}
+</style>
 <script>
     W = function(){};
     W.uploadCaderno = {};

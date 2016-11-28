@@ -1,11 +1,13 @@
 <?php
 return [
+    'homeUrl'=> ['caderno-edicoes'],
+    'name' => 'ABIO - BACKEND',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=abio',
             'username' => 'root',
-            'password' => '',
+            'password' => '@by02016Abio#',
             'charset' => 'utf8',
         ],
         'mailer' => [
