@@ -81,7 +81,7 @@ class CadernoEdicoesController extends SiteController
             $i = 0;
             $row = $xml->addChild('row');
             foreach ($value as $k => $v) {
-                if(in_array($k,['publish_date','journal_number'])){
+                if(in_array($k,['publish_date', 'id_journal'])){
                     $id_journal = $value['id_journal'];
                     $row->addChild('cell', $v);
                 }
