@@ -109,10 +109,13 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionDataJournal()
     {         	
-        $dt = Yii::$app->request->post('dt');
+        $dt = Yii::$app->request->post('dt');         
+        $dt = str_replace('/', '-', $dt);
+        $dt = date('Y-m-d', strtotime($dt));
+        
         $empresa = $this->empresa;
-	$journal = Journal::findBySql("SELECT * FROM journal WHERE publish_date='$dt' AND deleted_date IS NULL AND id_user IN(SELECT id FROM user WHERE id_company=$empresa)");
-        echo ($journal) ? 'existe' : 'não existe';
+	$journal = Journal::findBySql("SELECT * FROM journal WHERE publish_date='$dt' AND deleted_date IS NULL AND id_user IN(SELECT id FROM user WHERE id_company=$empresa)")->all();
+        echo (!empty($journal)) ? 'existe' : 'não existe';
     }
     
     /**

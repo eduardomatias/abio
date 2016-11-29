@@ -11,5 +11,25 @@
  */
 
 body {
-  padding-top: 60px;
+  padding-top: 30px;
+}
+
+
+input#dataJournal{
+    width: 140px;
+    height: 34px;
+    border-radius: 8px;
+    margin-right: 4px;
+    background-color: white;
+}
+
+
+.container{
+    width: 100%;
+    padding: 0px;
+}
+
+.row.fileupload-buttonbar {
+    padding-left: 79px;
+        height: 63px;
 }

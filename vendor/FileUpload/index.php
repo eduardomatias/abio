@@ -6,7 +6,6 @@
 <!-- Bootstrap styles -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Generic page styles -->
-<link rel="stylesheet" href="css/style.css">
 <!-- blueimp Gallery styles -->
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
@@ -15,6 +14,8 @@
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+<link rel="stylesheet" href="js/vendor/datepicker/datepicker3.css">
+<link rel="stylesheet" href="css/style.css?aasd=asdasdssds">
 
 <div class="container">
     <!-- The file upload form used as target for the file upload widget -->
@@ -22,6 +23,10 @@
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
         <div class="row fileupload-buttonbar">
             <div class="col-lg-7">
+                <span class="publishDate">
+                    <label>Data: <label>
+                        <input type="text" name="data" id="dataJournal" required style="width: 140px;" maxlength="10" >
+                </span>
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <span class="btn btn-success fileinput-button">
                     <i class="glyphicon glyphicon-plus"></i>
@@ -42,24 +47,23 @@
                     <i class="glyphicon glyphicon-trash"></i>
                     <span>Excluir</span>
                 </button>
-                <input type="checkbox" class="toggle">
-                <br />
-                <label>Data: <input type="date" name="data" id="dataJournal" required style="width: 140px;" maxlength="10" ></label>
+               <!--<input type="checkbox" class="toggle">-->
                 <!-- The global file processing state -->
                 <span class="fileupload-process"></span>
             </div>
             <!-- The global progress state -->
-            <div class="col-lg-5 fileupload-progress fade">
-                <!-- The global progress bar -->
+<!--            <div class="col-lg-5 fileupload-progress fade">
+                 The global progress bar 
                 <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar progress-bar-success" style="width:0%;"></div>
                 </div>
-                <!-- The extended global progress state -->
+                 The extended global progress state 
                 <div class="progress-extended">&nbsp;</div>
-            </div>
+            </div>-->
         </div>
         <!-- The table listing the files available for upload/download -->
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        
     </form>
     <br>
 
@@ -172,6 +176,7 @@
 <script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/vendor/datepicker/bootstrap-datepicker.js"></script>
 <!-- blueimp Gallery script -->
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
@@ -198,24 +203,57 @@
 <![endif]-->
 
 <script>
-
-    // validar data do jornal
-    $('input#dataJournal').change(function(){
-        $.ajax({
-            type: "POST",
-            url: "../../frontend/web/index.php?r=caderno-edicoes/data-journal", // substitua por qualquer URL real
-            data: {dt: $(this).val()},
-            dataType: 'text'
-        }).done(function (r) {
-            if(r == 'existe'){
-                $('input#dataJournal').val('');
-                alert('A data selecionada já possui jornal cadastrado!');
+$(document).ready(function(){
+            $("#dataJournal").datepicker({autoclose: true, format: 'dd/mm/yyyy'});
+            $("#dataJournal").datepicker('show');
+            
+          
+            
+    $('.fileinput-button').click(function(){      
+        var date = $('input#dataJournal').val();
+            if (date == '' || date == 'undefined') {
+                 parent.dhtmlx.message({
+                    title: "Atenção",
+                    type: "alert-warning",
+                    text: "Selecione uma data antes de adicionar o jornal.",
+                });
+                $("#dataJournal").datepicker('show');
+                return false;                        
             }
-        });
+    });  
         
-    });
-    
-    
+        var requestSent = false;
+            // validar data do jornal
+            $('input#dataJournal').change(function(){                
+                date = $(this).val();                
+                 if(!requestSent) {
+                     requestSent = true;
+                    $.ajax({
+                        type: "POST",
+                        url: "../../frontend/web/index.php?r=caderno-edicoes/data-journal", // substitua por qualquer URL real
+                        data: {dt:date },
+                        dataType: 'text'
+                    }).done(function (r) {
+                        if(r == 'existe'){
+                           $('input#dataJournal').val('');
+                            parent.dhtmlx.message({
+                                    title: "Atenção",
+                                    type: "alert-warning",
+                                    text: "A data selecionada já possui jornal cadastrado. escolha uma nova data ou exclua o jornal cadastrado anteriormente na listagem de jornais.",
+                                });
+                            requestSent = false;
+                            $("#dataJournal").datepicker('show');
+                        } 
+                        else{
+                            requestSent = false;
+                           $('input#dataJournal').val(date);
+                       }
+                    });
+                }
+
+            });
+
+});
     var alerta = false;
     $('#fileupload').bind('fileuploadsubmit', function (e, data) {
         var inputs = data.context.find(':input');
@@ -236,7 +274,12 @@
             } else {
                 data.context.find('button').prop('disabled', false);
                 if(!alerta){
-                    alert('Não é possível cadastrar um caderno mais de uma vez para o mesmo jornal.');
+                    parent.dhtmlx.message({
+                        title: "Atenção",
+                        type: "alert-warning",
+                        text: "Não é possível cadastrar um caderno mais de uma vez para o mesmo jornal.",
+                    });
+                    
                     alerta = true;
                 }
                 $(this).focus();
@@ -259,4 +302,16 @@
         parent.parent.W.processaPDF(data.formData);
         
     });
+      //Date picker
+//    $('#dataJournal').datepicker('show').on('changeDate', function(ev){
+//        $('#dataJournal').datepicker({autoclose:true});
+//       // alert(ev.date.valueOf());
+//    });
+           // .datepicker("update", new Date())
+    
+    
+    
+
+
+//$("#dataJournal2").datepicker();
 </script>
