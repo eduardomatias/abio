@@ -204,7 +204,7 @@
 
 <script>
 $(document).ready(function(){
-            $("#dataJournal").datepicker({autoclose: true, format: 'dd/mm/yyyy'});
+            $("#dataJournal").datepicker({autoclose: true, format: 'dd/mm/yyyy', language: "pt-BR"});
             $("#dataJournal").datepicker('show');
             
           
