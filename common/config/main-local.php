@@ -1,5 +1,7 @@
 <?php
 return [
+         'homeUrl'=> ['caderno-edicoes'],
+    'name' => 'ABIO - BACKEND',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -16,12 +18,12 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
-        'view' => [
-         'theme' => [
-             'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
-             ],
-         ],
-    ],
+//        'view' => [
+////         'theme' => [
+////             'pathMap' => [
+////                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+////             ],
+////         ],
+//    ],
     ],
 ];

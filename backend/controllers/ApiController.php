@@ -7,12 +7,27 @@ use yii\rest\ActiveController;
 use yii\web\Response; 
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
+use common\models\SignupForm;
+
+
 
 class ApiController extends ActiveController
 {
-   public $modelClass = 'app\models\User';
+   public $modelClass = 'common\models\SignupForm';
    
-   
+    public function actions()
+    {
+        return [
+           
+            'create' => [
+                'class' => 'backend\models\CreateUserAction',
+                'modelClass' => $this->modelClass,
+                'checkAccess' => [$this, 'checkAccess'],
+                'scenario' => $this->createScenario,
+            ],
+            
+        ];
+    }
   
  public function behaviors()
   {
@@ -47,6 +62,7 @@ class ApiController extends ActiveController
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
+              ->orderBy('session.name ASC')
               ->limit('7');
         
                 return new ActiveDataProvider([
@@ -54,6 +70,35 @@ class ApiController extends ActiveController
         ]);
     }
   
+    
+     public function actionJournalByDate()
+    {   
+        header("Access-Control-Allow-Origin: *");
+        
+         $dateGet = Yii::$app->request->get('date');
+        
+        if ( empty($dateGet) ) {
+            return false;
+        }
+        
+        $date = date("Y-m-d", strtotime($dateGet));
+        
+        $query = new \yii\db\Query(); 
+        
+        $query->select(["DATE_FORMAT(journal.publish_date, '%m/%d/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
+              ->from('journal')
+              ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
+              ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
+              ->where(['journal.publish_date' => $date])              
+              ->orderBy('session.name ASC')
+              ->limit('7');
+        
+         return new ActiveDataProvider([
+            'query' => $query,
+        ]);
+    }
+    
+    
 public function actionFn() {
      
 $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?=Página\s\d)/si';
@@ -67,5 +112,38 @@ preg_match_all($re, $str, $matches);
 print'<pre>';
 print_r(preg_split('/(Página)/si', $matches[0][0]));
   }
+  
+  
+   /**
+     * Signs user up.
+     *
+     * @return mixed
+     */
+    public function actionSignup($userName, $password, $email)
+    {
+        try {
+            if (empty($userName) || empty($password)|| empty($email)) {
+                throw new \Exception('Porfavor preencha todos os campos e tente novamente');
+            }
+            
+            
+            $model = new SignupForm();
+            
+            $model->username = $userName;
+            $model->password = $password;
+            $model->email = $email;
+            
+            $user = $model->signup();
+            
+            return $this->render('signup', [
+                'model' => $model,
+            ]);
+
+         } catch (Exception $e) {
+             $errorMessage =  $e->getMessage();
+             echo json_encode(['status' => false, 'message' =>$errorMessage]);
+        }   
+        
+    }
 
 }
