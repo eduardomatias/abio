@@ -223,6 +223,10 @@ class CadernoEdicoesController extends SiteController
         return true;
     }
     
+    private function actionTeste()
+    {
+    
+    }
     /**
      * @inheritdoc
      */

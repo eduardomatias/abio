@@ -23,6 +23,13 @@ class ImportarEdicaoController extends Controller
     /**
      * @inheritdoc
      */
+    public function actionTeste()
+    {
+         $this->logErro(['message'=>'teste']);
+    }
+    /**
+     * @inheritdoc
+     */
     public function actionProcessaPdf()
     {
         $pdfPendente = $this->listaPdfPendente();
