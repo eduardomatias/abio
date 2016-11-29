@@ -1,14 +1,14 @@
 <?php
 
-namespace app\controllers;
+namespace frontend\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use app\models\journal_session;
-use app\models\journal_pages;
-use app\models\log;
-use app\lib\PDF2Text\PDF2Text;
+use frontend\models\Journal_session;
+use frontend\models\JournalPages;
+use app\models\Log;
+use frontend\libs\PDF2Text;
 
 class ImportarEdicaoController extends Controller
 {
@@ -20,7 +20,6 @@ class ImportarEdicaoController extends Controller
     
     private $typeLog = 1; // importacao de edicao
     
- 
     /**
      * @inheritdoc
      */

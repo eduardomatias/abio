@@ -10,6 +10,9 @@ use frontend\controllers\SiteController;
 use frontend\models\Journal;
 use frontend\models\Journal_pages;
 use frontend\models\Journal_session;
+use app\models\Log;
+use frontend\lib\PDF2Text\PDF2Text;
+
 class CadernoEdicoesController extends SiteController
 {
     
