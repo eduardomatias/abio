@@ -64,7 +64,7 @@ class ApiController extends ActiveController
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
               ->where('journal.deleted_date is null')
               ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
-              ->orderBy('session.name ASC')
+              ->orderBy('journal.publish_date DESC')
               ->limit('7');
         
                 return new ActiveDataProvider([
@@ -94,7 +94,7 @@ class ApiController extends ActiveController
               ->where(['journal.publish_date' => $date])  
               ->andWhere('journal.deleted_date is null')
               ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
-              ->orderBy('session.name ASC')
+              ->orderBy('journal.publish_date DESC')
               ->limit('7');
         
          return new ActiveDataProvider([
