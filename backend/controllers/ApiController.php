@@ -63,7 +63,7 @@ class ApiController extends ActiveController
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
               ->where('journal.deleted_date is null')
-              ->andWhere('journal.processing_date <> "0000-00-00 00:00:00" ')
+              ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
               ->orderBy('session.name ASC')
               ->limit('7');
         
@@ -93,7 +93,7 @@ class ApiController extends ActiveController
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
               ->where(['journal.publish_date' => $date])  
               ->andWhere('journal.deleted_date is null')
-              ->andWhere('journal.processing_date <> "0000-00-00 00:00:00" ')
+              ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
               ->orderBy('session.name ASC')
               ->limit('7');
         
