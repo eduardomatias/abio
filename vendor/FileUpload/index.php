@@ -43,7 +43,7 @@
                     <span>Cancel upload</span>
                 </button>
                 -->
-                <button type="button" class="btn btn-danger delete">
+                <button id="delete" type="button" class="btn btn-danger delete">
                     <i class="glyphicon glyphicon-trash"></i>
                     <span>Excluir</span>
                 </button>
@@ -209,7 +209,8 @@ $(document).ready(function(){
             
           
             
-    $('.fileinput-button').click(function(){      
+    $('.fileinput-button').click(function(){   
+        localStorage.setItem('validateRun','false');
         var date = $('input#dataJournal').val();
             if (date == '' || date == 'undefined') {
                  parent.dhtmlx.message({
@@ -252,6 +253,46 @@ $(document).ready(function(){
                 }
 
             });
+
+});
+
+
+$.widget('blueimp.fileupload', $.blueimp.fileupload, {
+
+    options: {
+        acceptFileTypes: /(\.|\/)(pdf)$/i,
+    },
+
+    processActions: {
+
+        validate: function (data, options) {
+            if (options.disabled) {
+                return data;
+            }
+            var dfd = $.Deferred(),
+                file = data.files[data.index];
+        
+            if (!options.acceptFileTypes.test(file.type)) {
+                validateRun = localStorage.getItem('validateRun');
+                if (validateRun == 'false') {
+                    parent.dhtmlx.message({
+                            title: "Atenção",
+                            type: "alert-warning",
+                            text: "São permitidos apenas arquivos no formato PDF.",
+                    });
+                    $('.cancel').closest('tr').remove()
+                }
+                localStorage.setItem('validateRun', 'true');
+                file.error = 'Invalid file type.';
+                dfd.rejectWith(this, [data]);
+                validateRun = true;
+            } else {
+                dfd.resolveWith(this, [data]);
+            }
+            return dfd.promise();
+        }
+
+    }
 
 });
     var alerta = false;
