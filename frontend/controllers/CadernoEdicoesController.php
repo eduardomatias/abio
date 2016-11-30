@@ -10,8 +10,8 @@ use frontend\controllers\SiteController;
 use frontend\models\Journal;
 use frontend\models\Journal_pages;
 use frontend\models\Journal_session;
-use app\models\Log;
-use frontend\lib\PDF2Text\PDF2Text;
+use frontend\models\Log;
+use frontend\libs\PDF2Text;
 
 class CadernoEdicoesController extends SiteController
 {
@@ -22,7 +22,7 @@ class CadernoEdicoesController extends SiteController
     private $id_usuario = 1;
     private $tp_caderno = null;
     private $dt_publicacao = null;
-    private $hash = 'sASda2e2sa';
+    
     private $file_name = '';
     
     public function behaviors()
@@ -111,7 +111,9 @@ class CadernoEdicoesController extends SiteController
      * @inheritdoc
      */
     public function actionDataJournal()
-    {         	
+    {   
+        Yii::$app->session->set('id_journal', null);
+        
         $dt = Yii::$app->request->post('dt');         
         $dt = str_replace('/', '-', $dt);
         $dt = date('Y-m-d', strtotime($dt));
@@ -127,9 +129,7 @@ class CadernoEdicoesController extends SiteController
     public function actionWinUploadCaderno()
     {   
 	$this->layout = 'main-login';
-	    
         $this->enableCsrfValidation = false;
-        Yii::$app->session->set('id_journal', null);
         return $this->render('win-upload-caderno');
     }
     
@@ -141,8 +141,10 @@ class CadernoEdicoesController extends SiteController
         
         $post = Yii::$app->request;
         $this->tp_caderno = $post->post('tp');
-        $this->dt_publicacao = $post->post('dt');
         $this->file_name = $file = $post->post('file');
+        
+        $date = \DateTime::createFromFormat('d/m/Y', $post->post('dt'));
+        $this->dt_publicacao = $date->format('Y-m-d');
         
         if(!$this->tp_caderno || !$this->dt_publicacao || !$file){
             echo $this->tp_caderno . $this->dt_publicacao . $file;

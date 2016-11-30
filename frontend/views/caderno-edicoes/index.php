@@ -43,7 +43,7 @@ $this->title = '';
     
     W.uploadCaderno.init = function() {
         WindowsDhtmlx = new dhtmlXWindows();
-        W.uploadCaderno.window = WindowsDhtmlx.createWindow("uploadCaderno", 0,0, 750, 750);
+        W.uploadCaderno.window = WindowsDhtmlx.createWindow("uploadCaderno", 0,0, 750, 450);
         W.uploadCaderno.window.button('minmax1').hide();
         W.uploadCaderno.window.button('park').hide();
         W.uploadCaderno.window.denyResize();

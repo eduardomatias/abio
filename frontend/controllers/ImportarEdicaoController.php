@@ -5,9 +5,10 @@ namespace frontend\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
+use frontend\models\Journal;
 use frontend\models\Journal_session;
-use frontend\models\JournalPages;
-use app\models\Log;
+use frontend\models\Journal_pages;
+use frontend\models\Log;
 use frontend\libs\PDF2Text;
 
 class ImportarEdicaoController extends Controller
@@ -75,7 +76,14 @@ class ImportarEdicaoController extends Controller
     private function listaPdfPendente()
     {
         // busca pdf pendente no banco (sem data de processamento)
-        $pdfDb = Journal_session::findAll(['processing_date' => null]);
+        $subQuery = Journal::find()
+                ->select('id_journal')
+                ->where(['deleted_date' => null]);
+        
+        $pdfDb = Journal_session::find()
+                ->where(['IN', 'id_journal', $subQuery])
+                ->andWhere(['processing_date' => null])
+                ->all();
         
         // busca pdf pendente na pasta
         // $pdfPasta = CFileHelper::findFiles("/uploads/unprocessed/");
