@@ -38,28 +38,26 @@ class ImportarEdicaoController extends Controller
              ob_clean();
             $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
             
-            var_dump('iniciando processo');
-            
 //            $totalPages = shell_exec($commandGetTotalPages);
-        exec($commandGetTotalPages, $totalPages);
-            print_r($totalPages);
+            exec($commandGetTotalPages, $totalPages);
+            
             
             $re = '/[\d]/si';
             preg_match_all($re, $totalPages[0], $matches );
 
             // Print the entire match result
-            print_r($matches[0]);
+            $totalPages = $matches[0][0];
             
-            print_r('fim');
             
-//            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
-//            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
-//            die;
-//           for($i = 1; $i <= $totalPages; $i++) {
-//               
-//               exec('sudo pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2, $totalPages);
-//               var_dump('arquivo'.$i.$path2.' criado com sucesso \n');
-//           }
+            
+            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
+            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
+            die;
+           for($i = 1; $i <= $totalPages; $i++) {
+               
+               exec('sudo pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2, $totalPages);
+               var_dump('arquivo'.$i.$path2.' criado com sucesso \n');
+           }
            die('asdasd');
         
         
