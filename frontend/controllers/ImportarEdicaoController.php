@@ -37,7 +37,7 @@ class ImportarEdicaoController extends Controller
              $totalPages = [];
              
              ob_clean();
-            $commandGetTotalPages = "sudo ls /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/ 2>&1";
+            $commandGetTotalPages = "ls /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/ 2>&1";
             var_dump('iniciando processo');
             
             $totalPages = shell_exec($commandGetTotalPages);
