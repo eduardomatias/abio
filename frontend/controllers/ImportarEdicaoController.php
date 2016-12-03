@@ -35,7 +35,7 @@ class ImportarEdicaoController extends Controller
     {
              $totalPages = [];
 
-             ob_clean();
+             //ob_clean();
             $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
             
 //            $totalPages = shell_exec($commandGetTotalPages);
@@ -55,8 +55,7 @@ class ImportarEdicaoController extends Controller
             
            for($i = 1; $i <= $totalPages; $i++) {
                
-               exec('sudo pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2, $totalPages);
-               var_dump('arquivo'.$i.$path2.' criado com sucesso \n');
+               shell_exec('pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2);
            }
            die('asdasd');
         
