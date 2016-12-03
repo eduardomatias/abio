@@ -38,10 +38,10 @@ class ImportarEdicaoController extends Controller
              
              ob_clean();
             $commandGetTotalPages = "sudo pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
-            var_dump('iniciando processo \n');
-//            
-//            exec($commandGetTotalPages, $totalPages);
-//            var_dump($totalPages.'\n');
+            var_dump('iniciando processo');
+            
+            exec($commandGetTotalPages, $totalPages);
+            var_dump($totalPages.'\n');
 //            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
 //            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
 //            die;
