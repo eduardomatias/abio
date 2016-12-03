@@ -118,3 +118,20 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.user-panel>.image>img {
+    left: 35px !important;
+    position: relative !important;
+}
+
+i.fa.fa-gears {
+    display: none;
+}
+
+li.dropdown.messages-menu {
+    display: none;
+}
+
+li.dropdown.notifications-menu {
+    display: none;
+}

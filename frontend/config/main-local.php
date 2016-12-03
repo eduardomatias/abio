@@ -2,7 +2,7 @@
 
 $config = [
      'homeUrl'=> ['caderno-edicoes'],
-    'name' => 'ABIO - BACKEND',
+    'name' => 'IMPRENSA OFICIAL',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation

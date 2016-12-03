@@ -110,8 +110,10 @@ class ImportarEdicaoController extends Controller
             $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
  
             preg_match_all($re, $textFullTratado, $matches);
-
-            $text = preg_split('/(Página)/si', $matches[0][0]);
+               
+            if (!empty($matches[0][0])) {
+                $text = preg_split('/(Página)/si', $matches[0][0]);
+            }
             
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);

@@ -269,6 +269,7 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             if (options.disabled) {
                 return data;
             }
+            
             var dfd = $.Deferred(),
                 file = data.files[data.index];
         
