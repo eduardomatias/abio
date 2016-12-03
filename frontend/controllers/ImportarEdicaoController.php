@@ -33,17 +33,15 @@ class ImportarEdicaoController extends Controller
      */
     public function actionProcessaPdf()
     {
-        error_reporting(~0);
-        ini_set('display_errors', 1);
+        
              $totalPages = [];
              
              ob_clean();
-            $commandGetTotalPages = "sudo ls";
+            $commandGetTotalPages = "sudo ls -la /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
             var_dump('iniciando processo');
             
-          $totalPages = shell_exec($commandGetTotalPages);
-            
-            var_dump($totalPages.'\n');
+            $totalPages = shell_exec($commandGetTotalPages);
+            var_dump($totalPages);
 //            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
 //            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
 //            die;
