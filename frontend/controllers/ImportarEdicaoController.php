@@ -35,8 +35,8 @@ class ImportarEdicaoController extends Controller
     {
              $totalPages = [];
 
-//             ob_clean();
-            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
+             ob_clean();
+            $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
             
             var_dump('iniciando processo');
             
