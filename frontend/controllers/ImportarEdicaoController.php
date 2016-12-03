@@ -121,29 +121,29 @@ class ImportarEdicaoController extends Controller
                $text[$i - 1] = $this->trataPdf(shell_exec($comand));
            }
            
-      
-                 print'<pre>';
-        print_r($text);
-        
-        
-            $a = new PDF2Text();
-            $a->setFilename($path);
-            $a->decodePDF();
-            $textFull = $a->output(false);
-            
-            $textFullTratado = $this->trataPdf($textFull);
-
-            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
- 
-            preg_match_all($re, $textFullTratado, $matches);
-               
-            if (!empty($matches[0][0])) {
-                $text = preg_split('/(Página)/si', $matches[0][0]);
-            }
-            
-             print'<pre>';
-        print_r($text);
-        die('aa');
+//      
+//                 print'<pre>';
+//        print_r($text);
+//        
+//        
+//            $a = new PDF2Text();
+//            $a->setFilename($path);
+//            $a->decodePDF();
+//            $textFull = $a->output(false);
+//            
+//            $textFullTratado = $this->trataPdf($textFull);
+//
+//            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
+// 
+//            preg_match_all($re, $textFullTratado, $matches);
+//               
+//            if (!empty($matches[0][0])) {
+//                $text = preg_split('/(Página)/si', $matches[0][0]);
+//            }
+//            
+//             print'<pre>';
+//        print_r($text);
+//        die('aa');
         
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
