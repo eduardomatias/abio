@@ -54,9 +54,12 @@ class ImportarEdicaoController extends Controller
             $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste';
             
            for($i = 1; $i <= $totalPages; $i++) {
-               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
-               var_dump($comand);
-               shell_exec($comand);
+               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
+               print_r($comand);
+               print_r(shell_exec($comand));
+               print_r('fim da pagina '.$i);
+               print'<br>';
            }
            die('11111asdasd');
         
