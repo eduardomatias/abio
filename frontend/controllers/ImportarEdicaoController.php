@@ -37,11 +37,12 @@ class ImportarEdicaoController extends Controller
              $totalPages = [];
              
              ob_clean();
-            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f' 2>&1";
+            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
             
             var_dump('iniciando processo');
             
-            $totalPages = shell_exec($commandGetTotalPages);
+//            $totalPages = shell_exec($commandGetTotalPages);
+        exec($commandGetTotalPages, $totalPages);
             print_r($totalPages);
             
             print_r('fim');
