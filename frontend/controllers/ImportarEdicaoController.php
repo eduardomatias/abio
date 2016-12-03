@@ -51,10 +51,10 @@ class ImportarEdicaoController extends Controller
             
             
             $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
-            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
+            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste';
             
            for($i = 1; $i <= $totalPages; $i++) {
-               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2;
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
                var_dump($comand);
                shell_exec($comand);
            }
