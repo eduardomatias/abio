@@ -45,9 +45,7 @@ class ImportarEdicaoController extends Controller
             print_r($totalPages);
             
             $re = '/[\d]/si';
-            $str = 'NumberOfPages: 8';
-
-            preg_match_all($re, $str, $totalPages[0]);
+            preg_match_all($re, $totalPages[0], $matches );
 
             // Print the entire match result
             print_r($matches[0]);
