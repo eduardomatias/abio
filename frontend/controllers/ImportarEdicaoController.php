@@ -100,47 +100,48 @@ class ImportarEdicaoController extends Controller
     {
         
         try {
+//            
+//            $totalPages = [];
+//            $text = '';
+//
+//             
+//           // $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
+//            $path = '/var/www/html/abio/frontend/web/'.$pathRel;
+//            $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
+//
+//            exec($commandGetTotalPages, $totalPages);
+//            
+//            $re = '/[\d]/si';
+//            preg_match_all($re, $totalPages[0], $matches);
+//            $totalPages = $matches[0][0];
+//            
+//           for($i = 1; $i <= $totalPages; $i++) {
+//               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
+//               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
+//               $text[$i - 1] = shell_exec($comand);
+//           }
+//           
+      
             
-            $totalPages = [];
-            $text = '';
+            $a = new PDF2Text();
+            $a->setFilename($path);
+            $a->decodePDF();
+            $textFull = $a->output(false);
+            
+            $textFullTratado = $this->trataPdf($textFull);
 
-             
-           // $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
-            $path = '/var/www/html/abio/frontend/web/'.$pathRel;
-            $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
-
-            exec($commandGetTotalPages, $totalPages);
+            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
+ 
+            preg_match_all($re, $textFullTratado, $matches);
+               
+            if (!empty($matches[0][0])) {
+                $text = preg_split('/(Página)/si', $matches[0][0]);
+            }
             
-            $re = '/[\d]/si';
-            preg_match_all($re, $totalPages[0], $matches);
-            $totalPages = $matches[0][0];
-            
-           for($i = 1; $i <= $totalPages; $i++) {
-               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
-               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
-               $text[$i - 1] = shell_exec($comand);
-           }
-           
-        print'<pre>';
+             print'<pre>';
         print_r($text);
         die('aa');
         
-            
-//            $a = new PDF2Text();
-//            $a->setFilename($path);
-//            $a->decodePDF();
-//            $textFull = $a->output(false);
-//            
-//            $textFullTratado = $this->trataPdf($textFull);
-//
-//            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
-// 
-//            preg_match_all($re, $textFullTratado, $matches);
-//               
-//            if (!empty($matches[0][0])) {
-//                $text = preg_split('/(Página)/si', $matches[0][0]);
-//            }
-            
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
             throw $e;
