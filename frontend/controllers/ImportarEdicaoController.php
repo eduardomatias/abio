@@ -33,11 +33,11 @@ class ImportarEdicaoController extends Controller
      */
     public function actionProcessaPdf()
     {
-        var_dump(ini_get('disable_functions')); // not available if shell_exec disabled
-var_dump(ini_get('safe_mode')); // not available if true
              $totalPages = [];
              
              ob_clean();
+        var_dump(ini_get('disable_functions')); // not available if shell_exec disabled
+var_dump(ini_get('safe_mode')); // not available if true
             $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
             
             var_dump('iniciando processo');
