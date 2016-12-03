@@ -96,16 +96,17 @@ class ImportarEdicaoController extends Controller
     /**
      * @inheritdoc
      */
-    private function lerPdf($path)
+    private function lerPdf($pathRel)
     {
         
         try {
-            die($path);
+            
             $totalPages = [];
             $text = '';
 
              
            // $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
+            $path = '/var/www/html/abio/frontend/web/'.$pathRel;
             $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
 
             exec($commandGetTotalPages, $totalPages);
@@ -120,7 +121,9 @@ class ImportarEdicaoController extends Controller
                $text[$i - 1] = shell_exec($comand);
            }
            
-        
+        print'<pre>';
+        print_r($text);
+        die('aa');
         
             
 //            $a = new PDF2Text();
