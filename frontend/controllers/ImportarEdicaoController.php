@@ -44,7 +44,7 @@ class ImportarEdicaoController extends Controller
             var_dump($totalPages.'\n');
             $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
             $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
-            
+            die;
            for($i = 1; $i <= $totalPages; $i++) {
                
                exec('sudo pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2, $totalPages);
