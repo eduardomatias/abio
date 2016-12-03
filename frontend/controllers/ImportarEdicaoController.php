@@ -35,7 +35,7 @@ class ImportarEdicaoController extends Controller
     {
              $totalPages = [];
 
-             //ob_clean();
+             ob_clean();
             $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
             
 //            $totalPages = shell_exec($commandGetTotalPages);
@@ -43,7 +43,7 @@ class ImportarEdicaoController extends Controller
             
             
             $re = '/[\d]/si';
-            preg_match_all($re, $totalPages[0], $matches );
+            preg_match_all($re, $totalPages[0], $matches);
 
             // Print the entire match result
             $totalPages = $matches[0][0];
@@ -54,10 +54,11 @@ class ImportarEdicaoController extends Controller
             $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
             
            for($i = 1; $i <= $totalPages; $i++) {
-               
-               shell_exec('pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2);
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$i.$path2;
+               var_dump($comand);
+               shell_exec($comand);
            }
-           die('asdasd');
+           die('11111asdasd');
         
         
         $pdfPendente = $this->listaPdfPendente();
