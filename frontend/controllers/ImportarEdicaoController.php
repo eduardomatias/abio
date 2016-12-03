@@ -36,13 +36,21 @@ class ImportarEdicaoController extends Controller
              $totalPages = [];
 
              ob_clean();
-            $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data ";
+            $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
             
             var_dump('iniciando processo');
             
 //            $totalPages = shell_exec($commandGetTotalPages);
         exec($commandGetTotalPages, $totalPages);
             print_r($totalPages);
+            
+            $re = '/[\d]/si';
+            $str = 'NumberOfPages: 8';
+
+            preg_match_all($re, $str, $totalPages[0]);
+
+            // Print the entire match result
+            print_r($matches[0]);
             
             print_r('fim');
             
