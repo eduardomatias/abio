@@ -58,11 +58,13 @@ class ApiController extends ActiveController
         
         $query = new \yii\db\Query(); 
         
-        $query->select(["DATE_FORMAT(journal.publish_date, '%d/%M/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
+        $query->select(["DATE_FORMAT(journal.publish_date, '%d/%M/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path, journal_session.file_name) as fullPath"])
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
-              ->orderBy('session.name ASC')
+              ->where('journal.deleted_date is null')
+              ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
+              ->orderBy('journal.publish_date DESC')
               ->limit('7');
         
                 return new ActiveDataProvider([
@@ -85,18 +87,21 @@ class ApiController extends ActiveController
         
         $query = new \yii\db\Query(); 
         
-        $query->select(["DATE_FORMAT(journal.publish_date, '%m/%d/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path,'/', journal_session.file_name) as fullPath"])
+        $query->select(["DATE_FORMAT(journal.publish_date, '%m/%d/%Y') AS publishDate","session.name as sessionName", "CONCAT(journal_session.path, journal_session.file_name) as fullPath"])
               ->from('journal')
               ->join('JOIN', 'journal_session', 'journal_session.id_journal = journal.id_journal')
               ->join('JOIN', 'session', 'session.id_session = journal_session.id_session')
-              ->where(['journal.publish_date' => $date])              
-              ->orderBy('session.name ASC')
+              ->where(['journal.publish_date' => $date])  
+              ->andWhere('journal.deleted_date is null')
+              ->andWhere('journal_session.processing_date <> "0000-00-00 00:00:00" ')
+              ->orderBy('journal.publish_date DESC')
               ->limit('7');
         
          return new ActiveDataProvider([
             'query' => $query,
         ]);
     }
+    
     
     
 public function actionFn() {
