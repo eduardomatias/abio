@@ -38,10 +38,11 @@ class ImportarEdicaoController extends Controller
              $totalPages = [];
              
              ob_clean();
-            $commandGetTotalPages = "sudo ls -la";
+            $commandGetTotalPages = "sudo ls";
             var_dump('iniciando processo');
-            die('aaa');
-            exec($commandGetTotalPages, $totalPages);
+            
+          $totalPages = shell_exec($commandGetTotalPages);
+            
             var_dump($totalPages.'\n');
 //            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
 //            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
