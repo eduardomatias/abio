@@ -34,10 +34,9 @@ class ImportarEdicaoController extends Controller
     public function actionProcessaPdf()
     {
              $totalPages = [];
-             
-             ob_clean();
-        
-            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/valeu.txt";
+
+//             ob_clean();
+            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
             
             var_dump('iniciando processo');
             
