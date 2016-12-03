@@ -33,7 +33,8 @@ class ImportarEdicaoController extends Controller
      */
     public function actionProcessaPdf()
     {
-        
+        var_dump(ini_get('disable_functions')); // not available if shell_exec disabled
+var_dump(ini_get('safe_mode')); // not available if true
              $totalPages = [];
              
              ob_clean();
