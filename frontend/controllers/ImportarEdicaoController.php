@@ -96,7 +96,7 @@ class ImportarEdicaoController extends Controller
     /**
      * @inheritdoc
      */
-    private function lerPdf($pathRel)
+    private function lerPdf($path)
     {
         
         try {
