@@ -118,7 +118,7 @@ class ImportarEdicaoController extends Controller
            for($i = 1; $i <= $totalPages; $i++) {
                //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
                $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$pathRel.' -';
-               $text[$i - 1] = shell_exec($comand);
+               $text[$i - 1] = $this->trataPdf(shell_exec($comand));
            }
            
       
