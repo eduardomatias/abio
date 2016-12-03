@@ -35,20 +35,21 @@ class ImportarEdicaoController extends Controller
     {
         
              $totalPages = [];
-             ob_clean();
-            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
-            var_dump('iniciando processo');
-            
-            exec($commandGetTotalPages, $totalPages);
-            var_dump($totalPages);
-            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
-            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
-            
-           for($i = 1; $i <= $totalPages; $i++) {
-               
-               exec("pdftotext -f $i -l $i $path $path2", $totalPages);
-           }
-           die;
+             
+//             ob_clean();
+//            $commandGetTotalPages = "pdftotext /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf - | grep -c $'\f'";
+//            var_dump('iniciando processo');
+//            
+//            exec($commandGetTotalPages, $totalPages);
+//            var_dump($totalPages);
+//            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
+//            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
+//            
+//           for($i = 1; $i <= $totalPages; $i++) {
+//               
+//               exec("pdftotext -f $i -l $i $path $path2", $totalPages);
+//           }
+           die('asdasd');
         
         
         $pdfPendente = $this->listaPdfPendente();
