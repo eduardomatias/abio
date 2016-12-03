@@ -42,7 +42,10 @@ class ImportarEdicaoController extends Controller
             var_dump('iniciando processo');
             
             $totalPages = shell_exec($commandGetTotalPages);
-            var_dump($totalPages);
+            print_r($totalPages);
+            
+            print_r('fim');
+            
 //            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
 //            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
 //            die;
