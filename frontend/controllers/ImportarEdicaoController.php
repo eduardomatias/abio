@@ -33,37 +33,7 @@ class ImportarEdicaoController extends Controller
      */
     public function actionProcessaPdf()
     {
-             $totalPages = [];
-
-             ob_clean();
-            $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
-            
-//            $totalPages = shell_exec($commandGetTotalPages);
-            exec($commandGetTotalPages, $totalPages);
-            
-            
-            $re = '/[\d]/si';
-            preg_match_all($re, $totalPages[0], $matches);
-
-            // Print the entire match result
-            $totalPages = $matches[0][0];
-            
-            
-            
-            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
-            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste';
-            
-           for($i = 1; $i <= $totalPages; $i++) {
-               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
-               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
-               print_r($comand);
-               print_r(shell_exec($comand));
-               print_r('fim da pagina '.$i);
-               print'<br>';
-           }
-           die('11111asdasd');
-        
-        
+           
         $pdfPendente = $this->listaPdfPendente();
         // loop nos registro do banco se existir
         if($pdfPendente['pdfDb']){
@@ -130,19 +100,28 @@ class ImportarEdicaoController extends Controller
     {
         
         try {
+            die($path);
             $totalPages = [];
-            
-            $commandGetTotalPages = "pdftotext file.pdf - | grep -c $'\f'";
+            $text = '';
+
+             
+           // $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
+            $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
+
             exec($commandGetTotalPages, $totalPages);
-            var_dump($totalPages);
-            $path2 = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/teste.txt';
-            $path = ' /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf';
+            
+            $re = '/[\d]/si';
+            preg_match_all($re, $totalPages[0], $matches);
+            $totalPages = $matches[0][0];
             
            for($i = 1; $i <= $totalPages; $i++) {
-               
-               exec("pdftotext -f $i -l $i $path $path2", $totalPages);
+               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
+               $text[$i - 1] = shell_exec($comand);
            }
-           die;
+           
+        
+        
             
 //            $a = new PDF2Text();
 //            $a->setFilename($path);
