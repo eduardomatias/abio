@@ -240,7 +240,7 @@ use yii\helpers\Html;
 
                             <p>
                                 <?=Yii::$app->user->identity->username?>
-                                <small>Imprensa oficial do município</small>
+                                <small>Imprensa Oficial do Estado</small>
                             </p>
                         </li>
                         <!-- Menu Body -->

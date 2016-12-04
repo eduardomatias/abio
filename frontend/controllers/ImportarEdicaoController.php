@@ -104,46 +104,27 @@ class ImportarEdicaoController extends Controller
             $totalPages = [];
             $text = '';
 
-             $pathRel = $path;
-           // $commandGetTotalPages = "pdftk /var/www/html/abio/frontend/web/uploads/processed/1/2016/12/empresarial.pdf dump_data | grep NumberOfPages";
-            $pathRel = '/var/www/html/abio/frontend/web/'.$pathRel;
-            $commandGetTotalPages = "pdftk $pathRel dump_data | grep NumberOfPages";
-
-            exec($commandGetTotalPages, $totalPages);
+            // Monta o caminho absoluto do arquivo
+            $path = '/var/www/html/abio/frontend/web/'.$path;
+            //------------------------------------------------------------------
             
+            // Obtém o total de páginas que tem o arquivo
+            $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
+            exec($commandGetTotalPages, $totalPages);
             $re = '/[\d]/si';
             preg_match_all($re, $totalPages[0], $matches);
             $totalPages = $matches[0][0];
+            //------------------------------------------------------------------
             
+            
+            /* Extrai o conteúdo de cada página do pdf usando a lib lo linux pdftotext
+            * e em seguida retira os \r\n\t e monta um array com as páginas do arquivo. 
+            */
            for($i = 1; $i <= $totalPages; $i++) {
-               //$comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' '.$path2.$i.'.txt';
-               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$pathRel.' -';
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
                $text[$i - 1] = $this->trataPdf(shell_exec($comand));
            }
-           
-//      
-//                 print'<pre>';
-//        print_r($text);
-//        
-//        
-//            $a = new PDF2Text();
-//            $a->setFilename($path);
-//            $a->decodePDF();
-//            $textFull = $a->output(false);
-//            
-//            $textFullTratado = $this->trataPdf($textFull);
-//
-//            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
-// 
-//            preg_match_all($re, $textFullTratado, $matches);
-//               
-//            if (!empty($matches[0][0])) {
-//                $text = preg_split('/(Página)/si', $matches[0][0]);
-//            }
-//            
-//             print'<pre>';
-//        print_r($text);
-//        die('aa');
+            //------------------------------------------------------------------
         
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);

@@ -17,8 +17,7 @@ class CadernoEdicoesController extends SiteController
 {
     
     public $enableCsrfValidation;
-    private $id_journal = null;
-    private $empresa = 1;
+    private $id_journal = null;    
     private $id_usuario = 1;
     private $tp_caderno = null;
     private $dt_publicacao = null;
@@ -66,15 +65,18 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionGridJournal()
     {
+        $idCompany = Yii::$app->user->identity->company->id_company;
         Yii::$app->response->format = \yii\web\Response::FORMAT_RAW;
         $headers = Yii::$app->response->headers;
         $headers->add('Content-type', 'text/xml');
         
         $xml = new \SimpleXMLElement('<rows></rows>');
-        
         $data = Journal::find()
                 ->select(['id_journal','journal_number','DATE_FORMAT(publish_date, \'%d/%m/%Y\') as publish_date'])
+                ->join('join', 'user', 'journal.id_user = user.id')
+                ->join('join', 'company', 'user.id_company = company.id_company')                                
                 ->where('deleted_date IS NULL')
+                ->andWhere('company.id_company = '.$idCompany)
                 ->all();
         
         foreach ($data as $value) {
@@ -112,14 +114,23 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionDataJournal()
     {   
+        
         Yii::$app->session->set('id_journal', null);
+        $idCompany = Yii::$app->user->identity->company->id_company;        
         
         $dt = Yii::$app->request->post('dt');         
         $dt = str_replace('/', '-', $dt);
         $dt = date('Y-m-d', strtotime($dt));
         
-        $empresa = $this->empresa;
-	$journal = Journal::findBySql("SELECT * FROM journal WHERE publish_date='$dt' AND deleted_date IS NULL AND id_user IN(SELECT id FROM user WHERE id_company=$empresa)")->all();
+	$journal = Journal::findBySql("
+            SELECT * FROM journal 
+             join user on journal.id_user = user.id
+             join company on user.id_company = company.id_company                               
+            WHERE publish_date='$dt' 
+            AND company.id_company = $idCompany
+            AND deleted_date IS NULL 
+        ")->all();
+        
         echo (!empty($journal)) ? 'existe' : 'não existe';
     }
     
@@ -235,6 +246,7 @@ class CadernoEdicoesController extends SiteController
     private function salvaRegistro()
     {
         $session = Yii::$app->session;
+        $idCompany = Yii::$app->user->identity->company->id_company;        
         
         if(!$session->has('id_journal')){
 		
@@ -255,7 +267,7 @@ class CadernoEdicoesController extends SiteController
         // insert session
         $journal_session = new Journal_session();
         $journal_session->id_journal = $this->id_journal;
-        $journal_session->path = $this->empresa.'/'.Date('Y/m/');
+        $journal_session->path = $idCompany.'/'.Date('Y/m/');
         $journal_session->id_session = $this->tp_caderno;
         $journal_session->file_name = $this->file_name;
         $journal_session->save();
