@@ -61,6 +61,20 @@ if (Yii::$app->controller->action->id === 'login') {
     </div>
 
     <?php $this->endBody() ?>
+        <style>
+            .img-circle {
+    border-radius: 8% !important;
+    border-color: white !important;
+    border-style: double !important;
+    border-width: 4px !important;
+}
+
+.user-panel>.image>img {
+    width: 100% !important;
+    max-width: 125px !important;
+    height: auto !important;
+}
+            </style>
     </body>
     </html>
     <?php $this->endPage() ?>

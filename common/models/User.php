@@ -186,4 +186,9 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+    
+    public function getCompany()
+    {
+        return $this->hasOne(Company::className(), ['id_company' => 'id_company']);
+    }
 }

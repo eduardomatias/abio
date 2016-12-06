@@ -15,7 +15,7 @@
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <link rel="stylesheet" href="js/vendor/datepicker/datepicker3.css">
-<link rel="stylesheet" href="css/style.css?aasd=asdasdssds">
+<link rel="stylesheet" href="css/style.css?aasd=1123">
 
 <div class="container">
     <!-- The file upload form used as target for the file upload widget -->
@@ -269,6 +269,7 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             if (options.disabled) {
                 return data;
             }
+            
             var dfd = $.Deferred(),
                 file = data.files[data.index];
         
@@ -336,13 +337,21 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             return false;
         }
         
+        data.files[0].name = "teste.php";
+        data.originalFiles[0].name = "teste.php";
+        console.log(data.files[0].name = "teste.pdf");
+        console.log(data);
+        
+        return data;
+        
         data.formData = inputs.serializeArray();
-        data.formData[0].fileName = data.files[0].name;
+        data.formData[0].fileName = data.files[0].name = "teste.php";
         data.formData[0].dataJournal = dataJournal;
 
         parent.parent.W.processaPDF(data.formData);
         
     });
+    
       //Date picker
 //    $('#dataJournal').datepicker('show').on('changeDate', function(ev){
 //        $('#dataJournal').datepicker({autoclose:true});

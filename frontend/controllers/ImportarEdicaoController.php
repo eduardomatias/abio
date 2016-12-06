@@ -33,6 +33,7 @@ class ImportarEdicaoController extends Controller
      */
     public function actionProcessaPdf()
     {
+           
         $pdfPendente = $this->listaPdfPendente();
         // loop nos registro do banco se existir
         if($pdfPendente['pdfDb']){
@@ -100,19 +101,31 @@ class ImportarEdicaoController extends Controller
         
         try {
             
-            $a = new PDF2Text();
-            $a->setFilename($path);
-            $a->decodePDF();
-            $textFull = $a->output(false);
-            
-            $textFullTratado = $this->trataPdf($textFull);
+            $totalPages = [];
+            $text = '';
 
-            $re = '/(?=(Diário Oficial do Município Instituído pela Lei)|(Página\s\d\sDiário Oficial do Município)).*(?<=Página\s\d)/si';
- 
-            preg_match_all($re, $textFullTratado, $matches);
-
-            $text = preg_split('/(Página)/si', $matches[0][0]);
+            // Monta o caminho absoluto do arquivo
+            $path = '/var/www/html/abio/frontend/web/'.$path;
+            //------------------------------------------------------------------
             
+            // Obtém o total de páginas que tem o arquivo
+            $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
+            exec($commandGetTotalPages, $totalPages);
+            $re = '/[\d]/si';
+            preg_match_all($re, $totalPages[0], $matches);
+            $totalPages = $matches[0][0];
+            //------------------------------------------------------------------
+            
+            
+            /* Extrai o conteúdo de cada página do pdf usando a lib lo linux pdftotext
+            * e em seguida retira os \r\n\t e monta um array com as páginas do arquivo. 
+            */
+           for($i = 1; $i <= $totalPages; $i++) {
+               $comand = 'pdftotext -f '.$i.' -l '.$i.' '.$path.' -';
+               $text[$i - 1] = $this->trataPdf(shell_exec($comand));
+           }
+            //------------------------------------------------------------------
+        
         } catch (\Exception $e) {
             $this->logErro(['message'=>'Erro ao tentar ler o PDF (' . $path . ')','error'=>$e]);
             throw $e;
