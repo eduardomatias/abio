@@ -148,6 +148,7 @@ class CadernoEdicoesController extends SiteController
     
     public function actionGetSessionByCompanyLogged()
     {   
+        header('Content-Type: text/html; charset=utf-8');
         $result = '';
 
         $idCompany = Yii::$app->user->identity->company->id_company;
