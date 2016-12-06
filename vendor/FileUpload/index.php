@@ -15,7 +15,7 @@
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <link rel="stylesheet" href="js/vendor/datepicker/datepicker3.css">
-<link rel="stylesheet" href="css/style.css?aasd=1123">
+<link rel="stylesheet" href="css/style.css?aasd=asd45255">
 
 <div class="container">
     <!-- The file upload form used as target for the file upload widget -->
@@ -33,7 +33,7 @@
                     <span>Adicionar arquivos...</span>
                     <input type="file" name="files[]" multiple>
                 </span>
-                <button type="submit" class="btn btn-primary start" onclick="alerta = false;">
+                <button id="sendFiles" type="submit" class="btn btn-primary start" onclick="alerta = false;">
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Enviar arquivos</span>
                 </button>
@@ -43,10 +43,10 @@
                     <span>Cancel upload</span>
                 </button>
                 -->
-                <button id="delete" type="button" class="btn btn-danger delete">
+<!--                <button id="delete" type="button" class="btn btn-danger delete">
                     <i class="glyphicon glyphicon-trash"></i>
                     <span>Excluir</span>
-                </button>
+                </button>-->
                <!--<input type="checkbox" class="toggle">-->
                 <!-- The global file processing state -->
                 <span class="fileupload-process"></span>
@@ -89,15 +89,9 @@
             <p class="name">{%=file.name%}</p>
             <strong class="error text-danger"></strong>
         </td>
-        <td class="title">
+        <td class="title" id="td-caderno">
             <label>Caderno: 
-                <select name="caderno" class="caderno" required>
-                    <option value=''></option>
-                    <option value=1>Poder Executivo</option>
-                    <option value=2>Poder Legislativo</option>
-                    <option value=3>Empresarial</option>
-                    <option value=4>OAB</option>
-                    <option value=5>Completo</option>
+                <select filled="false" name="caderno" class="caderno" required>                   
                 </select>
             </label>
         </td>
@@ -204,10 +198,57 @@
 
 <script>
 $(document).ready(function(){
+
+                    $.ajax({
+                        type: "GET",
+                        url: "../../frontend/web/index.php?r=caderno-edicoes/get-session-by-company-logged", // substitua por qualquer URL real
+                        dataType: 'json'
+                    }).done(function (r) {
+                       console.log(r);
+                       window.options = r;
+                       
+                       $('#fileupload').on('focus','select[filled="false"]', function(){
+                            console.log(this)
+                            $(this).empty();
+                            for (i in r) {
+                                $(this).append('<option value="'+ i +'">'+r[i]+'</option>'); 
+                            }
+                            
+                            $(this).attr('filled', 'true');
+                            
+                        }) 
+                       //opts = JSON.stringify(r);
+                       //localStorage.setItem('options', opts);
+                       	var $secondChoice = $("#second-choice");
+                        
+                        $('#template-download').on('change', "select", function (e) {
+                            this.empty();
+                            $.each(r, function(index, value) {
+                                    this.append("<option>" + value + "</option>");
+                            });
+                        });
+                    });
+                
+                
             $("#dataJournal").datepicker({autoclose: true, format: 'dd/mm/yyyy', language: "pt-BR", todayHighlight: true});
             $("#dataJournal").datepicker('show');
             
-          
+          $('#sendFiles').click(function(){              
+                executed = false;
+                
+                $('select[name="caderno"]').each(function(i){
+                    if ($(this).val() == '' && executed == false) {
+                       parent.dhtmlx.message({
+                            title: "Atenção",
+                            type: "alert-warning",
+                            text: "Todos os cadernos precisam estar selecionados antes de enviar.",
+                        });
+                        executed = true
+                    }
+                
+            
+            });
+        });
             
     $('.fileinput-button').click(function(){   
         localStorage.setItem('validateRun','false');
