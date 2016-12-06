@@ -15,7 +15,7 @@
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <link rel="stylesheet" href="js/vendor/datepicker/datepicker3.css">
-<link rel="stylesheet" href="css/style.css?aasd=asdasdssds">
+<link rel="stylesheet" href="css/style.css?aasd=1123">
 
 <div class="container">
     <!-- The file upload form used as target for the file upload widget -->
@@ -269,6 +269,7 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             if (options.disabled) {
                 return data;
             }
+            
             var dfd = $.Deferred(),
                 file = data.files[data.index];
         
