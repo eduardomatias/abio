@@ -168,7 +168,8 @@ class CadernoEdicoesController extends SiteController
         
         $sessions = array_combine ( $idSessions , $nameSessions );
         
-        exit(json_encode($sessions));
+        exit(json_encode($sessions, JSON_UNESCAPED_UNICODE ));
+        
     }
     
     /**
