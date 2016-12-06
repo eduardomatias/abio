@@ -12,4 +12,14 @@
 
 error_reporting(E_ALL | E_STRICT);
 require('UploadHandler.php');
-$upload_handler = new UploadHandler();
+//$upload_handler = new UploadHandler();
+
+class CustomUploadHandler extends UploadHandler {
+    protected function trim_file_name($file_path, $name, $size, $type, $error, $index, $content_range) {
+        $extension = pathinfo($name, PATHINFO_EXTENSION);
+        $extension = ($extension != "") ? "." . $extension : ".pdf";
+        return uniqid() . $extension;
+    }
+}
+
+$upload_handler = new CustomUploadHandler();
