@@ -160,7 +160,7 @@ class ImportarEdicaoController extends Controller
         $transaction = $connecton->beginTransaction();
         
         try {
-            $newName = uniqid($data['id_journal'].'_').'.pdf'
+            $newName = uniqid($data['id_journal'].'_').'.pdf';
             // atualiza data do processamento do PDF
             $journal = Journal_session::findOne($data['id_journal_session']);
             $journal->file_name = $newName;
