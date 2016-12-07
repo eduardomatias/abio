@@ -149,7 +149,7 @@ class CadernoEdicoesController extends SiteController
      */
     public function actionProcessaCaderno()
     {
-        
+        $this->enableCsrfValidation = false;
         $post = Yii::$app->request;
         $this->tp_caderno = $post->post('tp');
         $this->file_name = $file = $post->post('file');

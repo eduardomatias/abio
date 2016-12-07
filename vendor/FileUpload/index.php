@@ -99,6 +99,7 @@
                     <option value=4>OAB</option>
                     <option value=5>Completo</option>
                 </select>
+                <input type="hidden" name="dateJournal" class="dateJournal" value="0">
             </label>
         </td>
         <td>
@@ -225,7 +226,7 @@ $(document).ready(function(){
         
         var requestSent = false;
             // validar data do jornal
-            $('input#dataJournal').change(function(){                
+            $('input#dataJournal').change(function(){
                 date = $(this).val();                
                  if(!requestSent) {
                      requestSent = true;
@@ -244,6 +245,7 @@ $(document).ready(function(){
                                 });
                             requestSent = false;
                             $("#dataJournal").datepicker('show');
+        
                         } 
                         else{
                             requestSent = false;
@@ -298,6 +300,7 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
 });
     var alerta = false;
     $('#fileupload').bind('fileuploadsubmit', function (e, data) {
+        $("input.dateJournal").val($('input#dataJournal').val());
         var inputs = data.context.find(':input');
         
         // Testa se o caderno foi preenchido
@@ -337,15 +340,11 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             return false;
         }
         
-        data.files[0].name = "teste.php";
-        data.originalFiles[0].name = "teste.php";
-        console.log(data.files[0].name = "teste.pdf");
-        console.log(data);
         
-        return data;
+        return true;
         
         data.formData = inputs.serializeArray();
-        data.formData[0].fileName = data.files[0].name = "teste.php";
+        data.formData[0].fileName = data.files[0].name;
         data.formData[0].dataJournal = dataJournal;
 
         parent.parent.W.processaPDF(data.formData);

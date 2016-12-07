@@ -12,16 +12,47 @@
 
 error_reporting(E_ALL | E_STRICT);
 require('UploadHandler.php');
-$upload_handler = new UploadHandler();
+//$upload_handler = new UploadHandler();
 
-/*
-require('UploadHandler.php');
 class CustomUploadHandler extends UploadHandler {
     protected function trim_file_name($file_path, $name, $size, $type, $error, $index, $content_range) {
-            $name = 'First_' . microtime(true);
-            $name = str_replace('.', '', $name);
-            return uniqid(). ".pdf";
-        }
+        $extension = pathinfo($name , PATHINFO_EXTENSION);
+        $extension = ($extension) ? "." . $extension : ".pdf";
+        
+        $newFileName = uniqid() . $extension;
+        $caderno     = $this->get_post_param('caderno');
+        $dataJournal = $this->get_post_param('dateJournal');
+        
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,"http://localhost/abio/frontend/web/index.php?r=caderno-edicoes/processa-caderno");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "file=".$newFileName."&dt=".$dataJournal."&tp=".$caderno);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $server_output = curl_exec ($ch);
+        curl_close ($ch);
+        
+        /*
+        $content = http_build_query(array(
+            'file' => $newFileName,
+            'dt' => $dataJournal,
+            'tp' => $caderno,
+        ));
+
+        $context = stream_context_create(array(
+            'http' => array(
+                'method'  => 'POST',
+                'content' => $content,
+            )
+        ));
+
+        $result = file_get_contents('http://localhost/abio/frontend/web/index.php?r=caderno-edicoes/processa-caderno', null, $context);
+        
+        */
+        
+        
+        
+        return $newFileName;
+    }
 }
 
 $upload_handler = new CustomUploadHandler();
