@@ -71,18 +71,19 @@ $this->title = '';
         
         url = 'index.php?r=caderno-edicoes/processa-caderno';
         params = 'file='+file+'&dt='+dt+'&tp='+tp;
-        dhtmlxAjax.post(url, params, function (a){
+        dhtmlxAjax.postSync(url, params, function (a){
             if(a.xmlDoc.status === 200){
 		url = 'index.php?r=importar-edicao/processa-pdf';
-		dhtmlxAjax.get(url, '', function (a){
+		dhtmlxAjax.postSync(url, '', function (a){
 		    if(a.xmlDoc.status === 200){
-			W.uploadCaderno.close();
-			gridJournal.recarregaGrid();
+			
 		    }
 		});
+		    
             }
         });
-        
+        W.uploadCaderno.close();
+			gridJournal.recarregaGrid();
     };
     
     W.enviaCanerno = function() {
