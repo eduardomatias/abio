@@ -74,7 +74,7 @@ $this->title = '';
         dhtmlxAjax.post(url, params, function (a){
             if(a.xmlDoc.status === 200){
 		url = 'index.php?r=importar-edicao/processa-pdf';
-		dhtmlxAjax.post(url, '', function (a){
+		dhtmlxAjax.get(url, '', function (a){
 		    if(a.xmlDoc.status === 200){
 			W.uploadCaderno.close();
 			gridJournal.recarregaGrid();
