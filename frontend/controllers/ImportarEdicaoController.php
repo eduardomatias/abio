@@ -34,6 +34,7 @@ class ImportarEdicaoController extends Controller
     public function actionProcessaPdf()
     {
            
+        $this->enableCsrfValidation = false;
         $pdfPendente = $this->listaPdfPendente();
         // loop nos registro do banco se existir
         if($pdfPendente['pdfDb']){
