@@ -108,6 +108,10 @@ class ImportarEdicaoController extends Controller
             $path = '/var/www/html/abio/frontend/web/'.$path;
             //------------------------------------------------------------------
             
+            if (preg_match('/\s/',$path)) {
+                $path = preg_replace('/\s/','\\ ',$path);
+            }  
+            
             // Obtém o total de páginas que tem o arquivo
             $commandGetTotalPages = "pdftk $path dump_data | grep NumberOfPages";
             exec($commandGetTotalPages, $totalPages);
