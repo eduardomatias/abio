@@ -18,8 +18,7 @@ class CadernoEdicoesController extends SiteController
 {
     
     public $enableCsrfValidation;
-    private $id_journal = null;    
-    private $id_usuario = 1;
+    private $id_journal = null;        
     private $tp_caderno = null;
     private $dt_publicacao = null;
     
@@ -276,12 +275,13 @@ class CadernoEdicoesController extends SiteController
     {
         $session = Yii::$app->session;
         $idCompany = Yii::$app->user->identity->company->id_company;        
+        $idUsuario = Yii::$app->user->identity->id;        
         
         if(!$session->has('id_journal')){
 		
             // insert journal
             $journal = new Journal();
-            $journal->id_user = $this->id_usuario;
+            $journal->id_user = $idUsuario;
             //$journal->journal_number = null;
             $journal->publish_date = $this->dt_publicacao;
             $journal->upload_date = Date('Y-m-d H:i:s');
