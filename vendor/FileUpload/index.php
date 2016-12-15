@@ -62,7 +62,7 @@
             </div>-->
         </div>
         <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        <table id="tablejornais" role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
         
     </form>
     <br>
@@ -86,7 +86,7 @@
             <span class="preview"></span>
         </td>
         <td>
-            <p class="name">{%=file.name%}</p>
+            <p class="name journalName">{%=file.name%}</p>
             <strong class="error text-danger"></strong>
         </td>
         <td class="title" id="td-caderno">
@@ -313,7 +313,33 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             
             var dfd = $.Deferred(),
                 file = data.files[data.index];
-        
+                
+        /* ---------------------- Validando se o ja foi inserido um caderno com o memso nome ----------------------*/
+            if ( $('#tablejornais > tbody > tr:visible .journalName').length > 1) { 
+                duplicate = [];
+                $('#tablejornais > tbody > tr:visible .journalName').each(function(k,v){
+                  if (file.name == $(this).html()){
+                       duplicate.push($(this).closest('tr'))
+                  }
+                });
+                if (duplicate.length > 1) {
+                    if (localStorage.getItem('alertDuplicate') === null) {
+                     parent.dhtmlx.message({
+                                title: "Atenção",
+                                type: "alert-warning",
+                                text: "Não é permitido fazer upload de 2 arquivos com o mesmo nome.",
+                        });
+                    }
+                    localStorage.setItem('alertDuplicate', false);
+                    lastTr = duplicate.length -1;
+                    duplicate[lastTr].remove();
+                }
+            }
+            /* -----------------------------------------------------------------------------------------------------*/
+            
+            
+            
+           /* ---------------------- Validando se o arquivo é do formato pdf --------------------------*/ 
             if (!options.acceptFileTypes.test(file.type)) {
                 validateRun = localStorage.getItem('validateRun');
                 if (validateRun == 'false') {
@@ -331,6 +357,8 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             } else {
                 dfd.resolveWith(this, [data]);
             }
+            /* ----------------------------------------------------------------------------------------*/ 
+            
             return dfd.promise();
         }
 
