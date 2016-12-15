@@ -34,6 +34,7 @@ class ImportarEdicaoController extends Controller
     public function actionProcessaPdf()
     {
            
+        $this->enableCsrfValidation = false;
         $pdfPendente = $this->listaPdfPendente();
         // loop nos registro do banco se existir
         if($pdfPendente['pdfDb']){
@@ -110,6 +111,7 @@ class ImportarEdicaoController extends Controller
             
             if (preg_match('/\s/',$path)) {
                 $path = preg_replace('/\s/','\\ ',$path);
+
             }  
             
             // Obtém o total de páginas que tem o arquivo
@@ -164,9 +166,10 @@ class ImportarEdicaoController extends Controller
         $transaction = $connecton->beginTransaction();
         
         try {
-
+            $newName = uniqid($data['id_journal'].'_').'.pdf';
             // atualiza data do processamento do PDF
             $journal = Journal_session::findOne($data['id_journal_session']);
+            $journal->file_name = $newName;
             $journal->processing_date = Date('Y-m-d H:i:s');
             $journal->save();
             
@@ -183,7 +186,7 @@ class ImportarEdicaoController extends Controller
             }
             
             // move pdf
-            $this->movePdf('uploads/unprocessed/' . $data['file_name'], 'uploads/processed/' . $data['path'] . $data['file_name']);
+            $this->movePdf('uploads/unprocessed/' . $data['file_name'], 'uploads/processed/' . $data['path'] . $newName);
             
             $transaction->commit();
 
