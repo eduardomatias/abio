@@ -81,9 +81,10 @@ $this->title = '';
 		});
 		    
             }
+            W.uploadCaderno.close();
+             gridJournal.recarregaGrid();
         });
-        W.uploadCaderno.close();
-			gridJournal.recarregaGrid();
+      
     };
     
     W.enviaCanerno = function() {
