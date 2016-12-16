@@ -366,6 +366,11 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
 
 });
     var alerta = false;
+    
+     $('#fileupload').bind('fileuploadstop', function (e, data) {         
+        parent.parent.W.uploadCaderno.close();
+        parent.parent.gridJournal.recarregaGrid();
+     });
     $('#fileupload').bind('fileuploadsubmit', function (e, data) {
         var inputs = data.context.find(':input');
         
@@ -411,6 +416,8 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
         data.formData[0].dataJournal = dataJournal;
 
         parent.parent.W.processaPDF(data.formData);
+        
+      
         
     });
       //Date picker
