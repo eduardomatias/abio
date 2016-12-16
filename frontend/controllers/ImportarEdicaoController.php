@@ -111,6 +111,8 @@ class ImportarEdicaoController extends Controller
             
             if (preg_match('/\s/',$path)) {
                 $path = preg_replace('/\s/','\\ ',$path);
+                $path = preg_replace('/\(/','\\(',$path);
+                $path = preg_replace('/\)/','\\)',$path);
 
             }  
             
