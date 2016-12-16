@@ -81,8 +81,6 @@ $this->title = '';
 		});
 		    
             }
-            W.uploadCaderno.close();
-             gridJournal.recarregaGrid();
         });
       
     };
