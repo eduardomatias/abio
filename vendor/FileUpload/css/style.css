@@ -32,6 +32,17 @@ input#dataJournal{
 }
 
 .row.fileupload-buttonbar {
-    padding-left: 79px;
+    padding-left: 115px;
         height: 63px;
+}
+
+select.caderno {    
+    width: 242px;
+    height: 37px;
+    border-radius: 26px;
+    padding-left: 7px;
+}
+
+td#td-caderno {
+    padding-left: 58px;
 }

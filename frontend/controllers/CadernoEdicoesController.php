@@ -12,13 +12,13 @@ use frontend\models\Journal_pages;
 use frontend\models\Journal_session;
 use frontend\models\Log;
 use frontend\libs\PDF2Text;
+use frontend\models\Session;
 
 class CadernoEdicoesController extends SiteController
 {
     
     public $enableCsrfValidation;
-    private $id_journal = null;    
-    private $id_usuario = 1;
+    private $id_journal = null;        
     private $tp_caderno = null;
     private $dt_publicacao = null;
     
@@ -56,7 +56,7 @@ class CadernoEdicoesController extends SiteController
      * @inheritdoc
      */
     public function actionIndex()
-    {   
+    {  
         return $this->render('index');
     }
     
@@ -141,7 +141,35 @@ class CadernoEdicoesController extends SiteController
     {   
 	$this->layout = 'main-login';
         $this->enableCsrfValidation = false;
+        
         return $this->render('win-upload-caderno');
+    }
+    
+    public function actionGetSessionByCompanyLogged()
+    {   
+        header('Content-Type: text/html; charset=utf-8');
+        $result = '';
+
+        $idCompany = Yii::$app->user->identity->company->id_company;
+        
+        $sessions = Session::find()
+            ->select(['session.id_session','session.name'])
+            ->join('join', 'company_sessions','company_sessions.id_session = session.id_session')
+            ->where('company_sessions.id_company = '.$idCompany)
+            ->all();
+
+            
+        foreach ($sessions as $value) {
+          $result[] =  $value->getAttributes();
+        }
+            
+        $idSessions = yii\helpers\ArrayHelper::getColumn($result, 'id_session');
+        $nameSessions = yii\helpers\ArrayHelper::getColumn($result, 'name');
+        
+        $sessions = array_combine ( $idSessions , $nameSessions );
+        
+        exit(json_encode($sessions, JSON_UNESCAPED_UNICODE ));
+        
     }
     
     /**
@@ -247,12 +275,13 @@ class CadernoEdicoesController extends SiteController
     {
         $session = Yii::$app->session;
         $idCompany = Yii::$app->user->identity->company->id_company;        
+        $idUsuario = Yii::$app->user->identity->id;        
         
         if(!$session->has('id_journal')){
 		
             // insert journal
             $journal = new Journal();
-            $journal->id_user = $this->id_usuario;
+            $journal->id_user = $idUsuario;
             //$journal->journal_number = null;
             $journal->publish_date = $this->dt_publicacao;
             $journal->upload_date = Date('Y-m-d H:i:s');

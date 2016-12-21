@@ -15,7 +15,7 @@
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
 <link rel="stylesheet" href="js/vendor/datepicker/datepicker3.css">
-<link rel="stylesheet" href="css/style.css?aasd=1123">
+<link rel="stylesheet" href="css/style.css?aasd=asd45255">
 
 <div class="container">
     <!-- The file upload form used as target for the file upload widget -->
@@ -33,7 +33,7 @@
                     <span>Adicionar arquivos...</span>
                     <input type="file" name="files[]" multiple>
                 </span>
-                <button type="submit" class="btn btn-primary start" onclick="alerta = false;">
+                <button id="sendFiles" type="submit" class="btn btn-primary start" onclick="alerta = false;">
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Enviar arquivos</span>
                 </button>
@@ -43,10 +43,10 @@
                     <span>Cancel upload</span>
                 </button>
                 -->
-                <button id="delete" type="button" class="btn btn-danger delete">
+<!--                <button id="delete" type="button" class="btn btn-danger delete">
                     <i class="glyphicon glyphicon-trash"></i>
                     <span>Excluir</span>
-                </button>
+                </button>-->
                <!--<input type="checkbox" class="toggle">-->
                 <!-- The global file processing state -->
                 <span class="fileupload-process"></span>
@@ -62,7 +62,7 @@
             </div>-->
         </div>
         <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        <table id="tablejornais" role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
         
     </form>
     <br>
@@ -86,18 +86,12 @@
             <span class="preview"></span>
         </td>
         <td>
-            <p class="name">{%=file.name%}</p>
+            <p class="name journalName">{%=file.name%}</p>
             <strong class="error text-danger"></strong>
         </td>
-        <td class="title">
+        <td class="title" id="td-caderno">
             <label>Caderno: 
-                <select name="caderno" class="caderno" required>
-                    <option value=''></option>
-                    <option value=1>Poder Executivo</option>
-                    <option value=2>Poder Legislativo</option>
-                    <option value=3>Empresarial</option>
-                    <option value=4>OAB</option>
-                    <option value=5>Completo</option>
+                <select filled="false" name="caderno" class="caderno" required>                   
                 </select>
                 <input type="hidden" name="dateJournal" class="dateJournal" value="0">
             </label>
@@ -205,10 +199,57 @@
 
 <script>
 $(document).ready(function(){
+
+                    $.ajax({
+                        type: "GET",
+                        url: "../../frontend/web/index.php?r=caderno-edicoes/get-session-by-company-logged", // substitua por qualquer URL real
+                        dataType: 'json'
+                    }).done(function (r) {
+                       console.log(r);
+                       window.options = r;
+                       
+                       $('#fileupload').on('focus','select[filled="false"]', function(){
+                            console.log(this)
+                            $(this).empty();
+                            for (i in r) {
+                                $(this).append('<option value="'+ i +'">'+r[i]+'</option>'); 
+                            }
+                            
+                            $(this).attr('filled', 'true');
+                            
+                        }) 
+                       //opts = JSON.stringify(r);
+                       //localStorage.setItem('options', opts);
+                       	var $secondChoice = $("#second-choice");
+                        
+                        $('#template-download').on('change', "select", function (e) {
+                            this.empty();
+                            $.each(r, function(index, value) {
+                                    this.append("<option>" + value + "</option>");
+                            });
+                        });
+                    });
+                
+                
             $("#dataJournal").datepicker({autoclose: true, format: 'dd/mm/yyyy', language: "pt-BR", todayHighlight: true});
             $("#dataJournal").datepicker('show');
             
-          
+          $('#sendFiles').click(function(){              
+                executed = false;
+                
+                $('select[name="caderno"]').each(function(i){
+                    if ($(this).val() == '' && executed == false) {
+                       parent.dhtmlx.message({
+                            title: "Atenção",
+                            type: "alert-warning",
+                            text: "Todos os cadernos precisam estar selecionados antes de enviar.",
+                        });
+                        executed = true
+                    }
+                
+            
+            });
+        });
             
     $('.fileinput-button').click(function(){   
         localStorage.setItem('validateRun','false');
@@ -274,7 +315,33 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             
             var dfd = $.Deferred(),
                 file = data.files[data.index];
-        
+                
+        /* ---------------------- Validando se o ja foi inserido um caderno com o memso nome ----------------------*/
+            if ( $('#tablejornais > tbody > tr:visible .journalName').length > 1) { 
+                duplicate = [];
+                $('#tablejornais > tbody > tr:visible .journalName').each(function(k,v){
+                  if (file.name == $(this).html()){
+                       duplicate.push($(this).closest('tr'))
+                  }
+                });
+                if (duplicate.length > 1) {
+                    if (localStorage.getItem('alertDuplicate') === null) {
+                     parent.dhtmlx.message({
+                                title: "Atenção",
+                                type: "alert-warning",
+                                text: "Não é permitido fazer upload de 2 arquivos com o mesmo nome.",
+                        });
+                    }
+                    localStorage.setItem('alertDuplicate', false);
+                    lastTr = duplicate.length -1;
+                    duplicate[lastTr].remove();
+                }
+            }
+            /* -----------------------------------------------------------------------------------------------------*/
+            
+            
+            
+           /* ---------------------- Validando se o arquivo é do formato pdf --------------------------*/ 
             if (!options.acceptFileTypes.test(file.type)) {
                 validateRun = localStorage.getItem('validateRun');
                 if (validateRun == 'false') {
@@ -292,6 +359,8 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
             } else {
                 dfd.resolveWith(this, [data]);
             }
+            /* ----------------------------------------------------------------------------------------*/ 
+            
             return dfd.promise();
         }
 
@@ -299,6 +368,11 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
 
 });
     var alerta = false;
+    
+     $('#fileupload').bind('fileuploadstop', function (e, data) {         
+        parent.parent.W.uploadCaderno.close();
+        parent.parent.gridJournal.recarregaGrid();
+     });
     $('#fileupload').bind('fileuploadsubmit', function (e, data) {
         $("input.dateJournal").val($('input#dataJournal').val());
         var inputs = data.context.find(':input');
@@ -348,6 +422,8 @@ $.widget('blueimp.fileupload', $.blueimp.fileupload, {
         data.formData[0].dataJournal = dataJournal;
 
         parent.parent.W.processaPDF(data.formData);
+        
+      
         
     });
     
