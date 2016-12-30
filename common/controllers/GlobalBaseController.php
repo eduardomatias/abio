@@ -14,11 +14,11 @@
 * @author Charlan Santos
 */
 
-namespace common\models;
+namespace common\controllers;
 
-use \app\models\GlobalModel as GlobalModel;
 use Yii;
 use yii\web\Controller;
+use common\models\GlobalModel as GlobalModel;
 
 class GlobalBaseController extends Controller
 {
@@ -56,6 +56,8 @@ class GlobalBaseController extends Controller
      */
     public function beforeAction($action)
     {
+        return parent::beforeAction($action);
+        /*
         $this->enableCsrfValidation = false;
         $rotaController = $action->controller->getRoute();
         $temPermissao = $this->seg()->validaPermissaoAcao($rotaController,$_SESSION['gid']);
@@ -65,6 +67,8 @@ class GlobalBaseController extends Controller
             $msg = Yii::t('app','Você não tem permissão para executar esta ação.');
             echo json_encode(array('mensagem'=>$msg, 'tipo'=>'erro'));
         }
+     * 
+     */
     }
     
    /*

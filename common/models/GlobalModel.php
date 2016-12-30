@@ -15,8 +15,8 @@
 namespace common\models;
 
 use yii\db\ActiveQuery;
-use \yii\db\ActiveRecord;
-use \yii\db\Exception;
+use yii\db\ActiveRecord;
+use yii\db\Exception;
 
 class GlobalModel extends ActiveRecord
 {

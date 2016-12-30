@@ -15,6 +15,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'enableCsrfValidation' => false
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -37,6 +38,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'dataDumpComponent' => [
+            'class' => 'common\components\DataDumpComponent',
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -45,6 +49,11 @@ return [
             ],
         ],
         */
+    ],
+     'aliases' => [
+        '@common' => '../../common',
+        '@assetsPath' => '../../vendor',
+        '@dhtmlxImg' => '../../../../vendor/dhtmlx/imgs',
     ],
     'params' => $params,
 ];
