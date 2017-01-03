@@ -41,6 +41,9 @@ return [
         'dataDumpComponent' => [
             'class' => 'common\components\DataDumpComponent',
         ],
+        'v' => [
+            'class' => 'common\components\ValidationComponent',
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,

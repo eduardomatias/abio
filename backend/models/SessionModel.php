@@ -10,11 +10,11 @@ namespace backend\models;
 use common\models\GlobalModel;
 
 /**
- * Description of sessionModel
+ * Description of SessionModel
  *
  * @author eduardo
  */
-class sessionModel extends GlobalModel
+class SessionModel extends GlobalModel
 {
 	
     /**

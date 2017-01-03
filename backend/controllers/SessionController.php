@@ -7,7 +7,7 @@
  */
 
 namespace backend\controllers;
-use backend\models\sessionModel;
+use backend\models\SessionModel;
 use common\controllers\GlobalBaseController as BaseController;
 
 /**
@@ -38,7 +38,7 @@ class SessionController extends BaseController
      */
     private function getConfigGridSessionHeader()
     {
-        $sessionModel = new sessionModel();
+        $sessionModel = new SessionModel();
     	$gridSettings = $sessionModel->gridSessionSettings();
 
         $config = [];
@@ -72,7 +72,7 @@ class SessionController extends BaseController
     {
         try {
             $post = \Yii::$app->request->post();
-            $sessionModel = (!empty($post['id_session'])) ? sessionModel::findOne($post['id_session']) : new sessionModel();
+            $sessionModel = (!empty($post['id_session'])) ? SessionModel::findOne($post['id_session']) : new SessionModel();
             $sessionModel->name = $post['name'];
             $sessionModel->save();
             $msg = $sessionModel->id_session;
@@ -94,7 +94,7 @@ class SessionController extends BaseController
     {
         try {
             $post = \Yii::$app->request->post();
-            $sessionModel = sessionModel::findOne($post['id_session']);
+            $sessionModel = SessionModel::findOne($post['id_session']);
             $sessionModel->delete();
             $msg = "";
             $status = true;

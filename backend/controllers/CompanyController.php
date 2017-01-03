@@ -4,7 +4,9 @@ namespace backend\controllers;
 
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use backend\models\companyModel;
+use yii\web\UploadedFile;
+use backend\models\CompanyModel;
+use backend\models\CompanySessionsModal;
 use common\controllers\GlobalBaseController as BaseController;
 
 /**
@@ -26,7 +28,7 @@ class CompanyController extends BaseController
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index', 'create','get-session'],
+                        'actions' => ['logout', 'index', 'create', 'get-session', 'save'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -82,7 +84,7 @@ class CompanyController extends BaseController
      */
     private function getConfigGridSessionHeader()
     {
-        $companyModel = new companyModel();
+        $companyModel = new CompanyModel();
     	$gridSettings = $companyModel->gridSessionSettings();
 
         $config = [];
@@ -97,4 +99,50 @@ class CompanyController extends BaseController
 
         return $config;
     }
+    
+    /**
+     * @inheritdoc
+     */
+    public function actionSave()
+    {
+        try {
+            $post = \Yii::$app->request->post();
+            
+            $dados[1] = json_decode($post['grid_sessions'],true);;
+            unset($post['grid_sessions']);
+            $dados[0] = $post;
+            
+            $companyModel = new CompanyModel();
+            $companyModel->saveRelated($dados, ['CompanySessionsModal'=>'id_company']);
+            
+            $companyModel->logo_url = UploadedFile::getInstance($companyModel, 'logo_url');
+            if ($companyModel->upload()) {
+                return;
+            }
+            
+            $msg = "";
+            $status = true;
+            
+        } catch (\Exception $exc) {
+            $msg = $exc->getMessage();
+            $status = false;
+            
+        }
+        
+        return json_encode(['message'=>$msg, 'status'=>$status]);
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    private function Upload() {
+        if (Yii::$app->request->isPost) {
+            $model = new CompanyModel();
+            $model->logo_url = UploadedFile::getInstance($model, 'logo_url');
+            if ($model->upload()) {
+                return;
+            }
+        }
+    }
+    
 }

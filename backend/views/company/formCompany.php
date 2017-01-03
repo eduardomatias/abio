@@ -8,11 +8,17 @@ $this->title = 'Cadastro de empresa';
 ?>
 
 <div id="layoutObj" class="site-index" style="position: relative; top: 0px; left: 0px; right: 0px; width: 100%; height: 550px; border:0px;"></div>
+
+<form id="realForm" method="POST" enctype="multipart/form-data">
+    <div id="dhxForm"></div>
+</form>
+
 <script>
     //dhtmlx.image_path='./codebase/imgs/';
 
     document.addEventListener("DOMContentLoaded", function(event) {
         objGlobal = {};
+        form_empresa = {};
         var main_layout = new dhtmlXLayoutObject('layoutObj', '4I');
 
         var a = main_layout.cells('a');
@@ -23,22 +29,72 @@ $this->title = 'Cadastro de empresa';
         var str = [
             { type:"settings" , labelWidth:80, inputWidth:250, position:"absolute"  },
             {type: "block", list: [
-                { type:"input" , name:"name", label:"Nome:", labelWidth:250, labelLeft:5, labelTop:5, inputLeft:5, inputTop:21  },
-                { type:"image" , name:"logo_url", label:"Logo:", labelWidth:250, labelLeft:275, labelTop:5, inputLeft:275, inputTop:21,imageWidth: 50, imageHeight: 50, url: "<?= \Yii::getAlias('@dhtmlxImg')."/default/close.png"?>"},
+                { type:"input" , name:"name", label:"Nome:", labelWidth:250, labelLeft:5, labelTop:5, inputLeft:5, inputTop:21, required:true},
+                { type:"file" , name:"logo_url", label:"Logo:", labelWidth:250, labelLeft:275, labelTop:5, inputLeft:275, inputTop:21},
+                { type:"input" , hidden:true, name:"grid_sessions", required:true}
             ]},
             {type: "block", list: [
-                { type:"button" , name:"form_button_1", label:"Salvar", value:"Salvar", width:"100", inputWidth:100, inputLeft:575, inputTop:25  }
+                { type:"button" , name:"salvar", label:"Salvar", value:"Salvar", width:"100", inputWidth:100, inputLeft:575, inputTop:25}
             ]}
         ];
 
         var form_empresa = a.attachForm(str);
+        form_empresa.attachEvent("onButtonClick", function(id) {
+            switch (id) {
+                case 'salvar':
+                    
+                    form_empresa.setItemValue('grid_sessions', '');
+
+                    dataSerialize = grid_sessoes_vinculadas.serializeToJsonStrMMS();
+                    if(dataSerialize == '[]'){
+                        dhtmlx.alert({text: "Para cadastrar uma empresa é necessário vincular pelo menos uma sessão!", ok: "ok"});
+                        return false;
+                    }
+
+                    // set dados da grid no form para enviar os dados
+                    form_empresa.setItemValue('grid_sessions', dataSerialize);
+                    
+                    url = './index.php?r=company/save';
+                    form_empresa.send(url, "post", form_empresa.sendDataCallbackDefault);
+                break;
+            }
+        });
+        
+	form_empresa.sendDataCallbackDefault = function(loader, response) {
+
+            if (typeof response === 'undefined') {
+                response = loader.xmlDoc.response;
+            }
+
+            response = JSON.parse(response);
+            if (response.status) {
+
+                if (typeof response.message === 'undefined' || response.message == '') {
+                    response.message = "Operação realizada com sucesso!";
+                }
+
+                dhtmlx.alert({text: response.message , ok: "ok", callback: function(){location.reload();}});
+
+            } else {
+
+                if (typeof response.message === 'undefined' || response.message == '') {
+                    response.message = "Erro ao realizar a operação.";
+                }
+
+                dhtmlx.alert({
+                    title: "Atenção!",
+                    type:"alert-error errorCustom",
+                    text: response.message,
+                });
+            }
+	}
 
 
 
         var b = main_layout.cells('b');
         b.fixSize(true,true);
         b.hideArrow();
-        b.setHeight(300);
+        b.setHeight(350);
         b.setText('Sessões da empresa');
         var grid_sessoes_vinculadas = b.attachGrid();
         grid_sessoes_vinculadas.setIconsPath('./codebase/imgs/');
@@ -55,7 +111,7 @@ $this->title = 'Cadastro de empresa';
         var c = main_layout.cells('c');
         c.fixSize(true,true);
         c.hideArrow();
-        c.setHeight(300);
+        c.setHeight(350);
         c.setText("Sessões do sistema <button id='btnAddSession' onclick='objGlobal.adicionarSession()' class='button-right icon-adicionar' title='Adicionar sessão'></button>");
         var grid_sessoes = c.attachGrid();
         grid_sessoes.setIconsPath('./codebase/imgs/');
