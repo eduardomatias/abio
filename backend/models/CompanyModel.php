@@ -65,8 +65,9 @@ class CompanyModel extends GlobalModel {
      */
     public function upload() {
         if ($this->validate()) {
-            $this->imageFile->saveAs('images/logo_imprensa/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
-            $this->logo_url = $this->imageFile->baseName . '.' . $this->imageFile->extension;
+            $fileName = "logo_" . uniqid();
+            $this->imageFile->saveAs('images/logo_imprensa/' . $fileName . '.' . $this->imageFile->extension);
+            $this->logo_url = $fileName . '.' . $this->imageFile->extension;
             $this->save();
             return true;
         } else {
