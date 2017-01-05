@@ -140,18 +140,6 @@ class CompanyController extends BaseController
         
         print_r("<script>parent.sendDataCallbackDefault(true, '" . json_encode(['message'=>$msg, 'status'=>$status]) . "');</script>");
     }
-    
-    /**
-     * @inheritdoc
-     */
-    private function Upload() {
-        if (Yii::$app->request->isPost) {
-            $model = new CompanyModel();
-            $model->logo_url = UploadedFile::getInstance($model, 'logo_url');
-            if ($model->upload()) {
-                return;
-            }
-        }
-    }
+
     
 }
