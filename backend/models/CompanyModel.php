@@ -18,7 +18,7 @@ use yii\web\UploadedFile;
  */
 class CompanyModel extends GlobalModel {
 
-    public $logo_url;
+    public $imageFile;
 
     /**
      * @inheritdoc
@@ -65,10 +65,12 @@ class CompanyModel extends GlobalModel {
      */
     public function upload() {
         if ($this->validate()) {
-            $this->logo_url->saveAs('images/logo_imprensa/' . $this->logo_url->baseName . '.' . $this->logo_url->extension);
+            $this->imageFile->saveAs('images/logo_imprensa/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+            $this->logo_url = $this->imageFile->baseName . '.' . $this->imageFile->extension;
+            $this->save();
             return true;
         } else {
-            return false;
+            throw new \Exception($this->errors);
         }
     }
 

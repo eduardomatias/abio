@@ -7,30 +7,57 @@ DhtmlxAsset::register($this);
 $this->title = 'Cadastro de empresa';
 ?>
 
-<div id="layoutObj" class="site-index" style="position: relative; top: 0px; left: 0px; right: 0px; width: 100%; height: 550px; border:0px;"></div>
-
-<form id="realForm" method="POST" enctype="multipart/form-data">
-    <div id="dhxForm"></div>
-</form>
+<div id="layoutObj" class="site-index" style="position: relative; top: 0px; left: 0px; right: 0px; width: 100%; height: 530px; border:0px;"></div>
+<iframe name="upload_area" frameBorder="0" height="0" style="display: none"></iframe>
 
 <script>
     //dhtmlx.image_path='./codebase/imgs/';
 
+    sendDataCallbackDefault = function(loader, response) {
+
+        if (typeof response === 'undefined') {
+            response = loader.xmlDoc.response;
+        }
+
+        response = JSON.parse(response);
+        if (response.status) {
+
+            if (typeof response.message === 'undefined' || response.message == '') {
+                response.message = "Operação realizada com sucesso!";
+            }
+
+            dhtmlx.alert({text: response.message , ok: "ok", callback: function(){location.reload();}});
+
+        } else {
+
+            if (typeof response.message === 'undefined' || response.message == '') {
+                response.message = "Erro ao realizar a operação.";
+            }
+
+            dhtmlx.alert({
+                title: "Atenção!",
+                type:"alert-error errorCustom",
+                text: response.message,
+            });
+        }
+    }
+    
+    
     document.addEventListener("DOMContentLoaded", function(event) {
         objGlobal = {};
         form_empresa = {};
-        var main_layout = new dhtmlXLayoutObject('layoutObj', '4I');
+        var main_layout = new dhtmlXLayoutObject('layoutObj', '3T');
 
         var a = main_layout.cells('a');
         a.fixSize(true,true);
         a.hideArrow();
         a.setText('Dados da empresa');
         a.setHeight(100);
-        var str = [
+        var formData = [
             { type:"settings" , labelWidth:80, inputWidth:250, position:"absolute"  },
             {type: "block", list: [
                 { type:"input" , name:"name", label:"Nome:", labelWidth:250, labelLeft:5, labelTop:5, inputLeft:5, inputTop:21, required:true},
-                { type:"file" , name:"logo_url", label:"Logo:", labelWidth:250, labelLeft:275, labelTop:5, inputLeft:275, inputTop:21},
+                { type:"file" , name:"CompanyModel[logo_url]", label:"Logo:", labelWidth:250, labelLeft:275, labelTop:5, inputLeft:275, inputTop:21, required:true},
                 { type:"input" , hidden:true, name:"grid_sessions", required:true}
             ]},
             {type: "block", list: [
@@ -38,7 +65,8 @@ $this->title = 'Cadastro de empresa';
             ]}
         ];
 
-        var form_empresa = a.attachForm(str);
+        form_html = a.attachHTMLString('<form action="./index.php?r=company/save" target="upload_area" id="realForm" method="POST" enctype="multipart/form-data"><div id="dhxForm"></div></form>');
+        var form_empresa = new dhtmlXForm("dhxForm", formData);
         form_empresa.attachEvent("onButtonClick", function(id) {
             switch (id) {
                 case 'salvar':
@@ -54,47 +82,22 @@ $this->title = 'Cadastro de empresa';
                     // set dados da grid no form para enviar os dados
                     form_empresa.setItemValue('grid_sessions', dataSerialize);
                     
-                    url = './index.php?r=company/save';
-                    form_empresa.send(url, "post", form_empresa.sendDataCallbackDefault);
+                    document.getElementById("realForm").submit();
+                    
+                    //url = './index.php?r=company/save';
+                    //form_empresa.send(url, "post", form_empresa.sendDataCallbackDefault);
+                    
                 break;
             }
         });
         
-	form_empresa.sendDataCallbackDefault = function(loader, response) {
-
-            if (typeof response === 'undefined') {
-                response = loader.xmlDoc.response;
-            }
-
-            response = JSON.parse(response);
-            if (response.status) {
-
-                if (typeof response.message === 'undefined' || response.message == '') {
-                    response.message = "Operação realizada com sucesso!";
-                }
-
-                dhtmlx.alert({text: response.message , ok: "ok", callback: function(){location.reload();}});
-
-            } else {
-
-                if (typeof response.message === 'undefined' || response.message == '') {
-                    response.message = "Erro ao realizar a operação.";
-                }
-
-                dhtmlx.alert({
-                    title: "Atenção!",
-                    type:"alert-error errorCustom",
-                    text: response.message,
-                });
-            }
-	}
 
 
 
         var b = main_layout.cells('b');
         b.fixSize(true,true);
         b.hideArrow();
-        b.setHeight(350);
+        b.setHeight(380);
         b.setText('Sessões da empresa');
         var grid_sessoes_vinculadas = b.attachGrid();
         grid_sessoes_vinculadas.setIconsPath('./codebase/imgs/');
@@ -111,7 +114,7 @@ $this->title = 'Cadastro de empresa';
         var c = main_layout.cells('c');
         c.fixSize(true,true);
         c.hideArrow();
-        c.setHeight(350);
+        c.setHeight(380);
         c.setText("Sessões do sistema <button id='btnAddSession' onclick='objGlobal.adicionarSession()' class='button-right icon-adicionar' title='Adicionar sessão'></button>");
         var grid_sessoes = c.attachGrid();
         grid_sessoes.setIconsPath('./codebase/imgs/');
@@ -155,13 +158,6 @@ $this->title = 'Cadastro de empresa';
 	grid_sessoes.load(urlLoad);
         grid_sessoes.enableDragAndDrop(true);
         
-        
-        
-        var d = main_layout.cells('d');
-        d.fixSize(true,true);
-        d.hideHeader();
-        d.hideArrow();
-        d.setHeight(50);
         
         
         objGlobal.adicionarSession = function() {

@@ -4941,3 +4941,2289 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1483412238.181
     'REQUEST_TIME' => 1483412238
 ]
+2017-01-04 00:13:26 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-04 00:11:23 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsad sdasd as dsa dasdsa'
+    'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-07-13.png'
+    'grid_sessions' => '[{\"id_session\":\"7\",\"name\":\"Judiciário\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(7)^_self\"}]'
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGwvm38AAQEAABVDXIYAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '437'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=netbeans-xdebug; advanced-backend=77oilhkud0dhoutpe0532r94l6; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '38770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483485083.527
+    'REQUEST_TIME' => 1483485083
+]
+2017-01-04 00:20:35 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\controllers\CompanyController::logo_url' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(128): yii\base\Component->__get('logo_url')
+#1 [internal function]: backend\controllers\CompanyController->actionSave()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('save', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('company/save', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-01-04 00:19:13 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'kdkldjslfkjdsf'
+    'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    'grid_sessions' => '[{\"id_session\":\"6\",\"name\":\"Executivo\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(6)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGwxcX8AAQEAABBwluAAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '411'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '39058'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483485553.259
+    'REQUEST_TIME' => 1483485553
+]
+2017-01-04 00:35:28 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\CompanyModel::upload' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('upload')
+#1 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(127): yii\db\BaseActiveRecord->__get('upload')
+#2 [internal function]: backend\controllers\CompanyController->actionSave()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('save', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('company/save', Array)
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-01-04 00:34:29 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdasd'
+    'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    'grid_sessions' => '[{\"id_session\":\"13\",\"name\":\"Defensoria Pública\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(13)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw1BX8AAQEAABbV0NgAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '421'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483486469.763
+    'REQUEST_TIME' => 1483486469
+]
+2017-01-04 00:46:13 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-04 00:45:49 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'sadasdsdasdasdda'
+    'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-04-09 11-05-29.png'
+    'grid_sessions' => '[{\"id_session\":\"17\",\"name\":\"Extravio de Documentos\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(17)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw3rH8AAQEAABp9xUsAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '432'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40286'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487148.992
+    'REQUEST_TIME' => 1483487148
+]
+2017-01-04 00:49:54 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-04 00:49:16 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'logo_url' => [
+        'name' => 'Captura de tela de 2016-04-09 11-05-29.png'
+        'type' => 'image/png'
+        'tmp_name' => '/opt/lampp/temp/phpBjbvnE'
+        'error' => 0
+        'size' => 176267
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw4fH8AAQEAABBtKYkAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176677'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyrrvcSVvPyMwm2JF'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487356.045
+    'REQUEST_TIME' => 1483487356
+]
+2017-01-04 00:50:03 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-04 00:49:55 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asd sadasd sadasdadsa d'
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'logo_url' => [
+        'name' => 'Captura de tela de 2016-04-09 11-05-29.png'
+        'type' => 'image/png'
+        'tmp_name' => '/opt/lampp/temp/phpq7MFH0'
+        'error' => 0
+        'size' => 176267
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw4hH8AAQEAABVEm@oAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176700'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryz8soWdKbjyMfBomW'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487364.245
+    'REQUEST_TIME' => 1483487364
+]
+2017-01-04 00:55:59 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-04 00:50:29 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asd asdsa d'
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'logo_url' => [
+        'name' => 'Captura de tela de 2016-03-26 19-17-07.png'
+        'type' => 'image/png'
+        'tmp_name' => '/opt/lampp/temp/phpiEGw8Q'
+        'error' => 0
+        'size' => 309414
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw4xX8AAQEAABp9xVQAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '309835'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryA5R2FTWsYvKDHAA7'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40622'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487429.048
+    'REQUEST_TIME' => 1483487429
+]
+2017-01-04 00:58:28 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-04 00:56:19 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'sa dasda d'
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'logo_url' => [
+        'name' => 'Captura de tela de 2016-04-07 19-24-57.png'
+        'type' => 'image/png'
+        'tmp_name' => '/opt/lampp/temp/phpTJHv5d'
+        'error' => 0
+        'size' => 15362
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw6I38AAQEAABbNDokAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '15782'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryNORPkNOgVNz4Hshj'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40848'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487779.06
+    'REQUEST_TIME' => 1483487779
+]
+2017-01-04 00:59:35 [::1][1][77oilhkud0dhoutpe0532r94l6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined property: yii\base\UnknownPropertyException::$getMessage' in Unknown:0
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#6 {main}
+2017-01-04 00:59:02 [::1][1][77oilhkud0dhoutpe0532r94l6][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'sad sad adsad'
+    'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-17-07.png'
+    'grid_sessions' => '[{\"id_session\":\"17\",\"name\":\"Extravio de Documentos\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(17)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '77oilhkud0dhoutpe0532r94l6'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WGw6xn8AAQEAABp9xV0AAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '433'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=77oilhkud0dhoutpe0532r94l6; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '40908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483487942.145
+    'REQUEST_TIME' => 1483487942
+]
+2017-01-04 23:59:22 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';'' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-04 23:50:36 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsad asd asd'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"3\",\"name\":\"Empresarial\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(3)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG18O38AAQEAABO@Vh0AAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '431'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '47394'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483570235.939
+    'REQUEST_TIME' => 1483570235
+]
+2017-01-05 00:00:02 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in Unknown:0
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-04 23:59:26 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsad asd asd'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"3\",\"name\":\"Empresarial\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(3)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG1@Tn8AAQEAABR633UAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '431'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '47708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483570766.202
+    'REQUEST_TIME' => 1483570766
+]
+2017-01-05 00:09:15 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 00:09:07 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsad asd asd'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"3\",\"name\":\"Empresarial\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(3)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2Ak38AAQEAABPUZK0AAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '431'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571347.218
+    'REQUEST_TIME' => 1483571347
+]
+2017-01-05 00:14:19 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 00:11:51 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsad asd asd'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"3\",\"name\":\"Empresarial\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(3)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2BN38AAQEAACjh3pQAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '431'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48438'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571511.628
+    'REQUEST_TIME' => 1483571511
+]
+2017-01-05 00:14:48 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:14:31 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'companymodel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-04-09 11-05-29.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpf54nrw'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 176267
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2B138AAQEAABGGN@AAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176691'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryA3x4DNxPHuta9X21'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48516'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571671.337
+    'REQUEST_TIME' => 1483571671
+]
+2017-01-05 00:17:38 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:15:01 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'companymodel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-55-23.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpmK5zNQ'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 290123
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2B9X8AAQEAABPUZLgAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '290547'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryKSmRePhTwayKDXnN'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571701.589
+    'REQUEST_TIME' => 1483571701
+]
+2017-01-05 00:19:09 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:17:48 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'companymodel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-04-09 11-10-27.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpqay8Wb'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 493131
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2CnH8AAQEAACjh3p0AAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '493555'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryGf971qUiETBsO8lx'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571868.763
+    'REQUEST_TIME' => 1483571868
+]
+2017-01-05 00:19:33 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:19:27 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'companymodel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-17-07.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpzg2X3a'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 309414
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2C-38AAQEAABGGN@kAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '309838'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryyQl4spCufx9D3jig'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571967.141
+    'REQUEST_TIME' => 1483571967
+]
+2017-01-05 00:25:33 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:19:40 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'companymodel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-17-07.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpEr374p'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 309414
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2DDH8AAQEAACjh3qcAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '309838'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryAfp9kBpQk5Vno6A8'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483571980.182
+    'REQUEST_TIME' => 1483571980
+]
+2017-01-05 00:28:05 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getMessage() on a non-object' in xdebug://debug-eval:1
+Stack trace:
+#0 {main}
+2017-01-05 00:25:41 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-04-07 19-24-57.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpLc7VZX'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 15362
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2EdX8AAQEAAC9MwmUAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '15786'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary3Pc4zlPSdDbeBTZy'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '48950'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483572341.859
+    'REQUEST_TIME' => 1483572341
+]
+2017-01-05 00:28:37 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\db\Transaction::rollBack' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Object.php:138
+Stack trace:
+#0 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(133): yii\base\Object->__get('rollBack')
+#1 [internal function]: backend\controllers\CompanyController->actionSave()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('save', Array)
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('company/save', Array)
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-01-05 00:28:12 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-17-07.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpRkGXty'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 309414
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2FC38AAQEAABPVsRYAAAAL'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '309838'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryF0pLQdB4Ghuvl0Zy'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '49058'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483572491.899
+    'REQUEST_TIME' => 1483572491
+]
+2017-01-05 00:33:09 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\CompanyModel::setAttributes' in /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('setAttributes')
+#1 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(123): yii\db\BaseActiveRecord->__get('setAttributes')
+#2 [internal function]: backend\controllers\CompanyController->actionSave()
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-01-05 00:33:00 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-55-23.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpT1ErTe'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 290123
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2GLH8AAQEAABO@Vi8AAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '290547'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryB0BPgv1e6GCBVg0z'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '49392'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483572780.75
+    'REQUEST_TIME' => 1483572780
+]
+2017-01-05 00:56:20 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]])' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:71
+Stack trace:
+#0 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(131): backend\models\CompanyModel->upload()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#7 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-01-05 00:55:59 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-05-12 19-02-53.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpOt4Sua'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 212159
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2Lj38AAQEAABO@VjYAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '212583'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary1MyxX0Bf8j6VYMhQ'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '50726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483574159.537
+    'REQUEST_TIME' => 1483574159
+]
+2017-01-05 00:57:05 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]])' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:71
+Stack trace:
+#0 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(131): backend\models\CompanyModel->upload()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#7 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-01-05 00:56:57 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-03-26 19-17-07.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpEhAa7i'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 309414
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2LyH8AAQEAADURiM0AAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '309838'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarypIURhwaLNumTHUJa'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '50730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483574216.956
+    'REQUEST_TIME' => 1483574216
+]
+2017-01-05 00:58:38 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]])' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:71
+Stack trace:
+#0 /opt/lampp/htdocs/abio/backend/controllers/CompanyController.php(131): backend\models\CompanyModel->upload()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#6 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#7 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2017-01-05 00:57:22 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => ''
+    'grid_sessions' => ''
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => 'Captura de tela de 2016-05-07 11-24-07.png'
+        ]
+        'type' => [
+            'logo_url' => 'image/png'
+        ]
+        'tmp_name' => [
+            'logo_url' => '/opt/lampp/temp/phpI4TyQq'
+        ]
+        'error' => [
+            'logo_url' => 0
+        ]
+        'size' => [
+            'logo_url' => 758580
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2L4n8AAQEAADSuJKwAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '759004'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryErFFlLNxqQ6tBatT'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '50750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483574242.568
+    'REQUEST_TIME' => 1483574242
+]
+2017-01-05 01:02:59 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 01:02:59 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdasdad'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\Captura de tela de 2016-03-26 19-55-23.png'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"17\",\"name\":\"Extravio de Documentos\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(17)^_self\"},{\"id_session\":\"18\",\"name\":\"Poder Judiciário\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(18)^_self\"},{\"id_session\":\"2\",\"name\":\"Poder Legislativo\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(2)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2NM38AAQEAADE2BHoAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1052'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '51472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483574579.147
+    'REQUEST_TIME' => 1483574579
+]
+2017-01-05 01:20:05 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 01:20:05 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asdsa ds ad'
+    'grid_sessions' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2RNX8AAQEAABPVsTwAAAAL'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '31'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '52464'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483575605.776
+    'REQUEST_TIME' => 1483575605
+]
+2017-01-05 01:30:06 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 01:30:06 [127.0.0.1][1][a0kosmgodc929n2tfcicllfq22][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'asd sadasd sadasdadsa d'
+    'CompanyModel' => [
+        'logo_url' => 'C:\\fakepath\\bonito.jpg'
+    ]
+    'grid_sessions' => '[{\"id_session\":\"6\",\"name\":\"Executivo\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(6)^_self\"},{\"id_session\":\"7\",\"name\":\"Judiciário\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(7)^_self\"}]'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'a0kosmgodc929n2tfcicllfq22'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2Tjn8AAQEAADvJQXYAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '698'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=a0kosmgodc929n2tfcicllfq22; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '52774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483576206.566
+    'REQUEST_TIME' => 1483576206
+]
+2017-01-05 03:20:52 [::1][1][mdh6aqrsrngvea0sqkeif9ntc0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 03:20:51 [::1][1][mdh6aqrsrngvea0sqkeif9ntc0][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'gasf safsad asdsa d a sad'
+    'grid_sessions' => '[{\"id_session\":\"7\",\"name\":\"Judiciário\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(7)^_self\"}]'
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => ''
+        ]
+        'type' => [
+            'logo_url' => ''
+        ]
+        'tmp_name' => [
+            'logo_url' => ''
+        ]
+        'error' => [
+            'logo_url' => 4
+        ]
+        'size' => [
+            'logo_url' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'mdh6aqrsrngvea0sqkeif9ntc0'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2tg38AAQEAABUSCFAAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '635'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryo5BVO8vrPTwDGXLA'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=mdh6aqrsrngvea0sqkeif9ntc0; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '52318'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483582851.802
+    'REQUEST_TIME' => 1483582851
+]
+2017-01-05 03:20:53 [::1][1][mdh6aqrsrngvea0sqkeif9ntc0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on a non-object' in /opt/lampp/htdocs/abio/backend/models/CompanyModel.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CompanyController->actionSave()
+#1 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#2 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('???')
+#3 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('???', '???')
+#4 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('???', '???')
+#5 /opt/lampp/htdocs/abio/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#6 /opt/lampp/htdocs/abio/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-05 03:20:53 [::1][1][mdh6aqrsrngvea0sqkeif9ntc0][info][application] $_GET = [
+    'r' => 'company/save'
+]
+
+$_POST = [
+    'name' => 'gasf safsad asdsa d a sad'
+    'grid_sessions' => '[{\"id_session\":\"7\",\"name\":\"Judiciário\",\"excluir\":\"http://localhost/abio/backend/web/codebase/imgs/http://localhost/abio/vendor/dhtmlx/imgs/default/close.png^Excluir^javascript:objGlobal.excluirSession(7)^_self\"}]'
+]
+
+$_FILES = [
+    'CompanyModel' => [
+        'name' => [
+            'logo_url' => ''
+        ]
+        'type' => [
+            'logo_url' => ''
+        ]
+        'tmp_name' => [
+            'logo_url' => ''
+        ]
+        'error' => [
+            'logo_url' => 4
+        ]
+        'size' => [
+            'logo_url' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'mdh6aqrsrngvea0sqkeif9ntc0'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+    '_identity-backend' => '4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WG2thX8AAQEAAA-PEmQAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '635'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary9K6aLoQh3ze0e17m'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/abio/backend/web/index.php?r=company/create&XDEBUG_SESSION_START=netbeans-xdebug'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=mdh6aqrsrngvea0sqkeif9ntc0; XDEBUG_SESSION=netbeans-xdebug; _identity-backend=4a49796866a6e56eccc8ac50839f946de0ce3c0bffc95b6b4bcdfe90749adaa3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220v4PI8YWT9XXN95DCOT4Oi7sm2vXiAP_%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.5.38 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/abio/backend/web/index.php'
+    'REMOTE_PORT' => '52324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=company/save'
+    'REQUEST_URI' => '/abio/backend/web/index.php?r=company/save'
+    'SCRIPT_NAME' => '/abio/backend/web/index.php'
+    'PHP_SELF' => '/abio/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483582853.557
+    'REQUEST_TIME' => 1483582853
+]

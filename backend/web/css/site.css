@@ -122,7 +122,7 @@ a.desc:after {
 .button-right{float:right; position: relative; right: 3px!important; bottom: 4px!important;}
 
 .icon-adicionar{
-    background: #ddd url(../../../vendor/dhtmlx/imgs/adicionar.png) no-repeat center center;
+    background: url(../../../vendor/dhtmlx/imgs/adicionar.png) no-repeat center center!important;
     cursor:pointer;
     width: 25px;
     height: 25px;

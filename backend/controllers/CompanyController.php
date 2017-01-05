@@ -106,30 +106,39 @@ class CompanyController extends BaseController
     public function actionSave()
     {
         try {
+
+            $connection = \Yii::$app->db;
+            $transaction = $connection->beginTransaction();
+
             $post = \Yii::$app->request->post();
             
-            $dados[1] = json_decode($post['grid_sessions'],true);;
+            // set session data
+            $dados[1] = json_decode($post['grid_sessions'],true);
             unset($post['grid_sessions']);
+            
+            // set company data
             $dados[0] = $post;
             
+            // save data
             $companyModel = new CompanyModel();
-            $companyModel->saveRelated($dados, ['CompanySessionsModal'=>'id_company']);
+            $companyModel->saveRelated($dados, ['CompanySessionsModal'=>'id_company'],false);
             
-            $companyModel->logo_url = UploadedFile::getInstance($companyModel, 'logo_url');
-            if ($companyModel->upload()) {
-                return;
-            }
+            // send image
+            $companyModel->imageFile = UploadedFile::getInstance($companyModel, 'logo_url');
+            $companyModel->upload();
             
             $msg = "";
             $status = true;
+            $transaction->commit();
             
         } catch (\Exception $exc) {
             $msg = $exc->getMessage();
             $status = false;
+            $transaction->rollBack();
             
         }
         
-        return json_encode(['message'=>$msg, 'status'=>$status]);
+        print_r("<script>parent.sendDataCallbackDefault(true, '" . json_encode(['message'=>$msg, 'status'=>$status]) . "');</script>");
     }
     
     /**
